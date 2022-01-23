@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>Dashboard</span>
+        <span class="example-spacer"></span>
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example notifications icon">notifications
+        </mat-icon>
+        <button mat-raised-button color="basic" [matMenuTriggerFor]="menu"><mat-icon  aria-hidden="false">account_box</mat-icon>&nbsp;Menu</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Profile</button>
+            <button mat-menu-item>Logout</button>
+        </mat-menu>
+    </mat-toolbar-row>
+</mat-toolbar>
