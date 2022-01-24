@@ -1,2 +1,7 @@
-<app-header flexLayout="column"></app-header>
-<p>dashboard-layout works!</p>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" [opened]="sideBarOpen">Sidenav content</mat-sidenav>
+  <mat-sidenav-content>
+    <app-header (toggleSideBarForMe)="sideBarToggler($event)"></app-header>
+    <p>dashboard-layout works!</p>
+  </mat-sidenav-content>
+</mat-sidenav-container>

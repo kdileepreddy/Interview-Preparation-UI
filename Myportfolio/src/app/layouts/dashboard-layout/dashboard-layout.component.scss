@@ -1,0 +1,15 @@
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+mat-sidenav,
+mat-sidenav.mat-locked-open,
+mat-sidenav.mat-closed.mat-locked-open-add-active {
+  min-width: 16% !important;
+  width: 10vw !important;
+  max-width: 40% !important;
+}

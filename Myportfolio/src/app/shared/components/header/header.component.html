@@ -1,13 +1,23 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
+        <button mat-icon-button (click)="toggleSideBar()">
+            <mat-icon>menu</mat-icon>
+        </button>
         <span>Dashboard</span>
         <span class="example-spacer"></span>
+        <mat-icon>email</mat-icon>
         <mat-icon class="example-icon" aria-hidden="false" aria-label="Example notifications icon">notifications
         </mat-icon>
-        <button mat-raised-button color="basic" [matMenuTriggerFor]="menu"><mat-icon  aria-hidden="false">account_box</mat-icon>&nbsp;Menu</button>
+        <button mat-raised-button color="basic" [matMenuTriggerFor]="menu">
+            <mat-icon>account_box</mat-icon>&nbsp;Dileep Reddy
+        </button>
         <mat-menu #menu="matMenu">
-            <button mat-menu-item>Profile</button>
-            <button mat-menu-item>Logout</button>
+            <button mat-menu-item>
+                <mat-icon>account_circle</mat-icon>&nbsp;Profile
+            </button>
+            <button mat-menu-item>
+                <mat-icon>logout</mat-icon>&nbsp;Logout
+            </button>
         </mat-menu>
     </mat-toolbar-row>
 </mat-toolbar>
