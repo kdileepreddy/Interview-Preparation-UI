@@ -5,13 +5,22 @@
   flex: 1 1 auto;
 }
 .example-full-width {
-  margin-right: 15px;
   height: 30px;
-  border-radius: 20px;
+  border-radius: 18px;
   border: 2px;
 }
-.Spacing{
+.Spacing {
   text-align: center;
   display: flex;
   justify-content: space-evenly;
+}
+
+.input-icons {
+  position: relative;
+  margin-right: 15px;
+}
+.icon {
+  position: absolute;
+  top: 8px;
+  right: 7px;
 }

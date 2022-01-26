@@ -1,6 +1,7 @@
 <mat-sidenav-container class="example-container">
   <mat-sidenav mode="side" [opened]="sideBarOpen">
     <app-sidenav-header></app-sidenav-header>
+    <app-sidenav-content></app-sidenav-content>
   </mat-sidenav>
   <mat-sidenav-content>
     <app-header (toggleSideBarForMe)="sideBarToggler($event)"></app-header>
