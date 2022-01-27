@@ -26,19 +26,19 @@ export class SidenavContentComponent implements OnInit {
         {
           displayName: 'Angular',
           iconName: 'font_download',
-          route: '/angularContent'
+          route: 'angularContent'
         },
         { 
           displayName: 'Spring Boot',
           iconName: 'code',
-          route: '/springboot-content'
+          route: 'springboot-content'
         }
       ]
     },
     {
       displayName: 'My Applications',
       iconName: 'apps',          
-      route: '/myApplications'
+      route: 'myApplications'
      
     }
   ];

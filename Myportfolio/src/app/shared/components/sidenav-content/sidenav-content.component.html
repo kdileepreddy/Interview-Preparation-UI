@@ -14,7 +14,7 @@
               </mat-panel-title>
             </mat-expansion-panel-header>
             <span *ngFor="let child of item.children">
-              <mat-list-item routerLink="[child.route]">
+              <mat-list-item [routerLink]="child.route">
                 <!-- Entradas de cada submenú  -->
                 <div fxLayout="row" fxLayoutAlign="space-between center" > 
                   <mat-icon>{{child.iconName}}</mat-icon>
@@ -26,7 +26,7 @@
         </mat-accordion>
       </span>
       <span *ngIf="!item.children || item.children.length === 0">
-        <mat-list-item routerLink="[item.route]">
+        <mat-list-item [routerLink]="item.route">
           <!-- Entradas principales -->
           <div fxLayout="row" fxLayoutAlign="space-between center">
             <mat-icon>{{item.iconName}}</mat-icon>

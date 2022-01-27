@@ -11,8 +11,9 @@ import { SidenavHeaderComponent } from './components/sidenav-header/sidenav-head
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SidenavContentComponent } from './components/sidenav-content/sidenav-content.component';
-import {MatListModule} from '@angular/material/list';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatListModule } from '@angular/material/list';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatInputModule,
     ReactiveFormsModule,
     MatListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    RouterModule,
   ],
   exports: [
     HeaderComponent,
