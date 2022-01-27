@@ -17,7 +17,7 @@ export class SidenavContentComponent implements OnInit {
     {
       displayName: 'Dashboard',
       iconName: 'dashboard',
-      route: '/dashboard',
+      route: 'dashboard',
     },        
     {
       displayName: 'Interview Content',

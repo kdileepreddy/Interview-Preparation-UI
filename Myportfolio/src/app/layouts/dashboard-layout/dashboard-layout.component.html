@@ -1,10 +1,10 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav mode="side" [opened]="sideBarOpen">
+  <mat-sidenav mode="side" [opened]="sideBarOpen" class="mat-elevation-z2">
     <app-sidenav-header></app-sidenav-header>
     <app-sidenav-content></app-sidenav-content>
   </mat-sidenav>
   <mat-sidenav-content>
     <app-header (toggleSideBarForMe)="sideBarToggler($event)"></app-header>
-    <p>dashboard-layout works!</p>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
