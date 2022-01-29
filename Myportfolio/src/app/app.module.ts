@@ -9,7 +9,9 @@ import { InterviewContentComponent } from './components/interview-content/interv
 import { AngularComponent } from './components/interview-content/angular/angular.component';
 import { SpringBootComponent } from './components/interview-content/spring-boot/spring-boot.component';
 import { MyApplicationsComponent } from './components/my-applications/my-applications.component';
-
+import { InterestingFactsComponent } from './components/interesting-facts/interesting-facts.component';
+import { MatCardModule } from '@angular/material/card';
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,15 +19,18 @@ import { MyApplicationsComponent } from './components/my-applications/my-applica
     InterviewContentComponent,
     AngularComponent,
     SpringBootComponent,
-    MyApplicationsComponent
+    MyApplicationsComponent,
+    InterestingFactsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    DashboardLayoutModule
+    DashboardLayoutModule,
+    MatCardModule,
+    FlexLayoutModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -15,6 +15,11 @@ export class SidenavContentComponent implements OnInit {
 
   menu: NavItem [] = [
     {
+      displayName: 'Interesting Facts',
+      iconName: 'fact_check',
+      route: 'interesting-facts',
+    },   
+    {
       displayName: 'Dashboard',
       iconName: 'dashboard',
       route: 'dashboard',

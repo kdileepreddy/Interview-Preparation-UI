@@ -1,0 +1,20 @@
+.content {
+  padding: 25px;
+  background-color: #79cbb8;
+}
+// .video{
+//     align-items: center;
+//     justify-content: center;
+//     margin-right: 10px;
+//     width:20px;
+// }
+.mat-card {
+  height: auto;
+  
+}
+::ng-deep .mat-card-content{
+
+    text-align: justify;
+    display: wrap;
+}
+

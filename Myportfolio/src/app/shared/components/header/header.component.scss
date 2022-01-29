@@ -1,3 +1,11 @@
+.header{
+  background-color: #79cbb8;
+  color:#500472;
+}
+.account-button{
+  background-color: #500472;
+  color:#79cbb8;
+}
 .example-icon {
   padding: 0 14px;
 }
@@ -23,4 +31,17 @@
   position: absolute;
   top: 8px;
   right: 7px;
+}
+.search-color{
+  color:#500472;
+}
+::ng-deep .mat-menu-content{
+  background-color: #79cbb8;
+}
+::ng-deep .mat-menu-item .mat-icon-no-color, .mat-menu-submenu-icon{
+  color: #500472;
+}
+.divider{
+  background-color:#500472;
+  height:2px;
 }
