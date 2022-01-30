@@ -9,7 +9,6 @@ import { NavItem } from 'src/app/Interfaces/NavItem';
 export class SidenavContentComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit(): void {
   }
 
