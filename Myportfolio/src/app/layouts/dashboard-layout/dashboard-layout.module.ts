@@ -13,7 +13,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     SharedModule,
     RouterModule,
     FlexLayoutModule,
-    MatSidenavModule,
+    MatSidenavModule
   ],
 })
 export class DashboardLayoutModule {}

@@ -13,7 +13,7 @@ const routes: Routes = [
     component: DashboardLayoutComponent,
     children: [
       {
-        path: 'interesting-facts',
+        path: '',
         component: InterestingFactsComponent,
       },
       {

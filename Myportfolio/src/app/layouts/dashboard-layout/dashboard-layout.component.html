@@ -4,7 +4,12 @@
     <app-sidenav-content></app-sidenav-content>
   </mat-sidenav>
   <mat-sidenav-content>
-    <app-header (toggleSideBarForMe)="sideBarToggler($event)"></app-header>
-    <router-outlet></router-outlet>
+    <div class="header" [ngClass]="sideBarOpen?'content-width':'full-content-width'">
+      <app-header (toggleSideBarForMe)="sideBarToggler($event)"></app-header>
+    </div>
+    <div class="content">
+      <router-outlet>
+      </router-outlet>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
