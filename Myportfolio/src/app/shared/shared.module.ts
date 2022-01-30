@@ -14,13 +14,12 @@ import { SidenavContentComponent } from './components/sidenav-content/sidenav-co
 import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { RouterModule } from '@angular/router';
-
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     SidenavHeaderComponent,
-    SidenavContentComponent,
+    SidenavContentComponent
   ],
   imports: [
     CommonModule,

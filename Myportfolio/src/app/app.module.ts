@@ -12,6 +12,10 @@ import { MyApplicationsComponent } from './components/my-applications/my-applica
 import { InterestingFactsComponent } from './components/interesting-facts/interesting-facts.component';
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { SharedModule } from './shared/shared.module';
+import { YouTubePlayerModule } from "@angular/youtube-player";
+import { AutoplayDirective } from './directives/autoplay.directive';
+import { SafePipe } from './pipes/safe.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +25,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     SpringBootComponent,
     MyApplicationsComponent,
     InterestingFactsComponent,
+    AutoplayDirective,
+    SafePipe
   ],
   imports: [
     BrowserModule,
@@ -28,7 +34,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     BrowserAnimationsModule,
     DashboardLayoutModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    SharedModule,
+    YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent],

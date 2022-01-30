@@ -8,14 +8,18 @@
                     <mat-card-title>Shiba Inu</mat-card-title>
                     <mat-card-subtitle>Dog Breed</mat-card-subtitle>
                 </mat-card-header> -->
-                
-                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/MohKd8vSdBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay></iframe>
-  
+                <iframe width="100%" height="250px" [appAutoplay]="fact.link|safe" [src]="fact.link|safe"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen autoplay></iframe>
+
+                <!-- <youtube-player videoId="MohKd8vSdBA" suggestedQuality="highres" [height]="250" [width]="285"
+                    [startSeconds]="4" [endSeconds]="8"> 
+                </youtube-player>-->
+
                 <mat-card-content>
                     <p>
-                        Because stars are so far away, it takes years for their light to reach us. Therefore, when you look at a star, you are actually seeing what it looked like years ago. It is entirely possible that some of the stars you see tonight do not actually exist anymore.
-                       
-                    </p>
+                        {{fact.content}} </p>
                 </mat-card-content>
                 <mat-card-actions>
                     <button mat-button>LIKE</button>
