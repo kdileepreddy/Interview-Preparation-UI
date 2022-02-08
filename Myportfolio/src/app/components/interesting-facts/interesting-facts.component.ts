@@ -28,7 +28,7 @@ export class InterestingFactsComponent implements OnInit {
     },
     {
       id: true,
-      imglink:'/assets/star.png',
+      imglink:'/assets/Submarinecablemap.png',
       link: 'https://www.youtube.com/embed/8wa8q8wRZyU',
       content: `Every time you visit a web page or send an email, data is being sent and received through an 
       cable system that stretches around the globe. The ocean is home to more than 700,000 miles of 
