@@ -8,17 +8,17 @@
                     <mat-card-title>Shiba Inu</mat-card-title>
                     <mat-card-subtitle>Dog Breed</mat-card-subtitle>
                 </mat-card-header> -->
-                
-                    <div *ngIf="facts[i].id" (mouseover)="show(i)">
-                        <img width="100%" height="250px"  [src]="fact.imglink">
-                    </div>
-                    <div *ngIf="!facts[i].id" (mouseleave)="hide(i)">
-                <iframe width="100%" height="250px" [appAutoplay]="fact.link|safe" [src]="fact.link|safe"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen autoplay></iframe>
+
+                <div *ngIf="fact.id" (mouseover)="show(i)">
+                    <img width="100%" height="250px" [src]="fact.imglink">
                 </div>
-               
+                <div *ngIf="!fact.id" (mouseleave)="hide(i)">
+                    <iframe width="100%" height="250px" [appAutoplay]="fact.link|safe" [src]="fact.link|safe"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen autoplay></iframe>
+                </div>
+
                 <!-- <youtube-player videoId="MohKd8vSdBA" suggestedQuality="highres" [height]="250" [width]="285"
                     [startSeconds]="4" [endSeconds]="8"> 
                 </youtube-player>-->
@@ -28,8 +28,18 @@
                         {{fact.content}} </p>
                 </mat-card-content>
                 <mat-card-actions>
-                    <button mat-button>LIKE</button>
-                    <button mat-button>SHARE</button>
+                    <div class="button-contianer">
+                        <button mat-raised-button class="like-button" (click)="increaseLikeCount(i)">
+                            <mat-icon>favorite</mat-icon>LIKE&nbsp;{{fact.like_count}}
+                        </button>
+
+                        <a class="share-button" (click)="whatsappshare(i)"><i
+                                class="fa-brands fa-whatsapp-square fa-2x"></i></a>
+                        <a class="share-button" (click)="facebookshare(i)"><i
+                                class="fa-brands fa-facebook-square fa-2x"></i></a>
+                        <a class="share-button" (click)="twittershare(i)"><i
+                                class="fa-brands fa-twitter-square fa-2x"></i></a>
+                    </div>
                 </mat-card-actions>
             </mat-card>
         </div>

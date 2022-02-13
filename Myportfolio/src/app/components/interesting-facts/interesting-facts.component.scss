@@ -5,11 +5,37 @@
 
 .mat-card {
   height: auto;
-  
 }
-::ng-deep .mat-card-content{
-
-    text-align: justify;
-    display: wrap;
+::ng-deep .mat-card-content {
+  text-align: justify;
+  display: wrap;
 }
-
+.like-button {
+  background-color: #500472;
+  color: #79cbb8;
+  border: 0px;
+  width: 30%;
+  line-height: 25px;
+  display: flex;
+  justify-content: flex-start;
+  height: 25px;
+  margin-top: 2px;
+}
+.share-button {
+  // background-color: #79cbb8;
+  color: #500472;
+  border: 0px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+.button-contianer {
+  display: flex;
+}
+.mat-icon {
+  font-size: 15px;
+  padding-right: 1px;
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+}

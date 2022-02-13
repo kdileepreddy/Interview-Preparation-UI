@@ -16,6 +16,7 @@ import { SharedModule } from './shared/shared.module';
 import { YouTubePlayerModule } from "@angular/youtube-player";
 import { AutoplayDirective } from './directives/autoplay.directive';
 import { SafePipe } from './pipes/safe.pipe';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { SafePipe } from './pipes/safe.pipe';
     MatCardModule,
     FlexLayoutModule,
     SharedModule,
-    YouTubePlayerModule
+    YouTubePlayerModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],
