@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { DataService } from 'src/app/Services/data.service';
 
 @Component({
   selector: 'app-header',
@@ -7,10 +8,15 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  pageName: string = '';
   searchFormControl = new FormControl();
-  constructor() {}
+  constructor(private dataservice: DataService) {}
   @Output() toggleSideBarForMe: EventEmitter<any> = new EventEmitter();
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.dataservice.pagedata.subscribe((data): any => {
+      this.pageName = data;
+    });
+  }
   toggleSideBar() {
     this.toggleSideBarForMe.emit();
     setTimeout(() => {

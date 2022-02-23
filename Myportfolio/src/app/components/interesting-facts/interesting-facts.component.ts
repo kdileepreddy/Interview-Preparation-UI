@@ -1,6 +1,7 @@
 import { Component, HostListener, Inject, OnInit, Output } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { DOCUMENT } from '@angular/common';
+import { DataService } from 'src/app/Services/data.service';
 @Component({
   selector: 'app-interesting-facts',
   templateUrl: './interesting-facts.component.html',
@@ -11,7 +12,8 @@ export class InterestingFactsComponent implements OnInit {
 
   constructor(
     private sanitizer: DomSanitizer,
-    @Inject(DOCUMENT) private document: Document
+    @Inject(DOCUMENT) private document: Document,
+    private dataservice: DataService
   ) {
     this.window = this.document.defaultView;
   }
@@ -22,7 +24,9 @@ export class InterestingFactsComponent implements OnInit {
   // @HostListener('mouseout') onMouseOut() {
   //   this.display = true;
   // }
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.dataservice.pagedata$.next('Interesting Facts');
+  }
   display: boolean = true;
   facts: any = [
     {
