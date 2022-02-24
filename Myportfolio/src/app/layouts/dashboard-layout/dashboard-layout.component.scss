@@ -13,26 +13,33 @@ mat-sidenav.mat-closed.mat-locked-open-add-active {
   width: 17vw !important;
   max-width: 40% !important;
 }
-.sidenav-color{
+
+.sidenav-color {
   background-color: #500472;
 }
-.header{
+
+.header {
   position: fixed;
 
-  top:0;
-  z-index:1;
+  top: 0;
+  z-index: 1;
   overflow: hidden;
 
   right: 0;
 }
-.content{
+
+.content {
   margin-top: 10vh;
   padding: 25px;
   background-color: #79cbb8;
+  width: auto;
+  height: 100%;
 }
-.content-width{
-  width:84%;
+
+.content-width {
+  width: 84%;
 }
-.full-content-width{
-  width:100%;
+
+.full-content-width {
+  width: 100%;
 }
