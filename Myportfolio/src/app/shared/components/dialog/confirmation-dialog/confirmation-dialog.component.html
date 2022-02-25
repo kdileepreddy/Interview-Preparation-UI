@@ -1,9 +1,11 @@
 <h1 mat-dialog-title>{{title}}</h1>
+<mat-divider></mat-divider>
 <div mat-dialog-content>
- 
+ <mat-label>Cards per row</mat-label>
   
 </div>
-<div mat-dialog-actions>
+<mat-divider></mat-divider>
+<div mat-dialog-actions class="button-position">
   <button mat-raised-button [mat-dialog-close]="true" (click)="onConfirm()">confirm</button>
   <button mat-raised-button [mat-dialog-close]="false" cdkFocusInitial>cancel</button>
 </div>
