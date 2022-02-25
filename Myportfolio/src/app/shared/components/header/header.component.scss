@@ -1,48 +1,65 @@
-.header{
+.header {
   background-color: #79cbb8;
-  color:#500472;
-  width:100%
+  color: #500472;
+  width: 100%;
 }
-.account-button{
+
+.account-button {
   background-color: #500472;
-  color:#79cbb8;
+  color: #79cbb8;
 }
+
 .example-icon {
   padding: 0 14px;
 }
+
 .example-spacer {
   flex: 1 1 auto;
 }
+
 .example-full-width {
   height: 30px;
   border-radius: 18px;
   border: 2px;
 }
+
 .Spacing {
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .input-icons {
   position: relative;
   margin-right: 15px;
 }
+
 .icon {
   position: absolute;
   top: 8px;
   right: 7px;
 }
-.search-color{
-  color:#500472;
-}
-::ng-deep .mat-menu-content{
-  background-color: #79cbb8;
-}
-::ng-deep .mat-menu-item .mat-icon-no-color, .mat-menu-submenu-icon{
+
+.search-color {
   color: #500472;
 }
-.divider{
-  background-color:#500472;
-  height:2px;
+
+::ng-deep .mat-menu-content {
+  background-color: #79cbb8;
+}
+
+::ng-deep .mat-menu-item .mat-icon-no-color,
+.mat-menu-submenu-icon {
+  color: #500472;
+}
+
+.divider {
+  background-color: #500472;
+  height: 2px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: content-box;
 }
