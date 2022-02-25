@@ -23,11 +23,12 @@ export class ConfirmationDialogComponent implements OnInit {
   ngOnInit(): void {
     this.title = this.dialogdata.title;
     this.message = this.dialogdata.message;
-    
+    this.NumberOfCards = this.dataservice.NumberOfCards;
   }
 
  
   onConfirm(): void {
     this.dataservice.carddata$.next(this.NumberOfCards);
+    this.dataservice.NumberOfCards = this.NumberOfCards;
   }
 }

@@ -9,7 +9,7 @@ import { DataService } from 'src/app/Services/data.service';
 })
 export class InterestingFactsComponent implements OnInit {
   private window: any;
-  public NumberOfCards:number=3;
+  public NumberOfCards: any;
 
   constructor(
     private sanitizer: DomSanitizer,
@@ -27,7 +27,8 @@ export class InterestingFactsComponent implements OnInit {
   // }
   ngOnInit(): void {
     this.dataservice.pagedata$.next('Interesting Facts');
-    this.dataservice.carddata.subscribe((data)=>{
+    this.NumberOfCards = this.dataservice.NumberOfCards;
+    this.dataservice.carddata.subscribe((data) => {
       this.NumberOfCards = data;
     });
   }
