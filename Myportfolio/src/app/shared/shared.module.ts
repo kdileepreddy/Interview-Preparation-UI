@@ -15,7 +15,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { RouterModule } from '@angular/router';
 import { WorkInProgressComponent } from './components/work-in-progress/work-in-progress.component';
-import { MatDialogModule } from '@angular/material/dialog';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ConfirmationDialogComponent } from './components/dialog/confirmation-dialog/confirmation-dialog.component';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -23,6 +24,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     SidenavHeaderComponent,
     SidenavContentComponent,
     WorkInProgressComponent,
+    ConfirmationDialogComponent
   ],
   imports: [
     CommonModule,
@@ -36,7 +38,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatListModule,
     MatExpansionModule,
     RouterModule,
-    MatDialogModule,
+    MatDialogModule
   ],
   exports: [
     HeaderComponent,
@@ -44,6 +46,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     SidenavHeaderComponent,
     SidenavContentComponent,
     WorkInProgressComponent,
+    ConfirmationDialogComponent
   ],
 })
 export class SharedModule {}
