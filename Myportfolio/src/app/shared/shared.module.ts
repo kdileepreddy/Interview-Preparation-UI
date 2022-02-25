@@ -17,6 +17,8 @@ import { RouterModule } from '@angular/router';
 import { WorkInProgressComponent } from './components/work-in-progress/work-in-progress.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ConfirmationDialogComponent } from './components/dialog/confirmation-dialog/confirmation-dialog.component';
+import {MatRadioModule} from '@angular/material/radio';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -38,7 +40,9 @@ import { ConfirmationDialogComponent } from './components/dialog/confirmation-di
     MatListModule,
     MatExpansionModule,
     RouterModule,
-    MatDialogModule
+    MatDialogModule,
+    MatRadioModule,
+    FormsModule
   ],
   exports: [
     HeaderComponent,

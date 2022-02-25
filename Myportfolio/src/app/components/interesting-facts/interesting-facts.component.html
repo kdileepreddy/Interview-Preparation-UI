@@ -1,7 +1,7 @@
 <div class="contianer">
 
     <div fxLayout="row wrap" fxLayoutGap="20px grid">
-        <div fxFlex="33%" *ngFor="let fact of facts;let i=index;">
+        <div [fxFlex]="(100/NumberOfCards)" *ngFor="let fact of facts;let i=index;">
             <mat-card class="mat-elevation-z4">
                 <!-- <mat-card-header>
                     <div  mat-card-avatar class="example-header-image"></div>

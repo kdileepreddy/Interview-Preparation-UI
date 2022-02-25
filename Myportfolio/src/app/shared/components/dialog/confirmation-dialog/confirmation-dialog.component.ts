@@ -1,5 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { DataService } from 'src/app/Services/data.service';
 
 @Component({
   selector: 'app-confirmation-dialog',
@@ -9,11 +10,12 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dial
 export class ConfirmationDialogComponent implements OnInit {
   public title: string = '';
   public message: string = '';
-
+  public NumberOfCards: any;
   constructor(
     public dialogRef: MatDialogRef<ConfirmationDialogComponent>,
     @Inject(MAT_DIALOG_DATA)
-    public dialogdata: { title: string; message: string }
+    public dialogdata: { title: string; message: string },
+    private dataservice:DataService
   ) {
     dialogRef.disableClose = true;
   }
@@ -21,7 +23,11 @@ export class ConfirmationDialogComponent implements OnInit {
   ngOnInit(): void {
     this.title = this.dialogdata.title;
     this.message = this.dialogdata.message;
+    
   }
 
-  onConfirm(): void {}
+ 
+  onConfirm(): void {
+    this.dataservice.carddata$.next(this.NumberOfCards);
+  }
 }

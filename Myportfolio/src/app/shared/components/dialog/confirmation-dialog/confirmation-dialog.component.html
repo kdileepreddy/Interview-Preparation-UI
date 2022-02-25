@@ -2,10 +2,16 @@
 <mat-divider></mat-divider>
 <div mat-dialog-content>
  <mat-label>Cards per row</mat-label>
-  
+ <br>
+ <mat-radio-group aria-label="Select an option" class="radio-group" [(ngModel)]="NumberOfCards">
+  <mat-radio-button [value]="1">one card per row</mat-radio-button>
+  <mat-radio-button [value]="2">two cards per row</mat-radio-button>
+  <mat-radio-button [value]="3">three cards per row</mat-radio-button>
+  <mat-radio-button [value]="4">four cards per row</mat-radio-button>
+</mat-radio-group> 
 </div>
 <mat-divider></mat-divider>
 <div mat-dialog-actions class="button-position">
-  <button mat-raised-button [mat-dialog-close]="true" (click)="onConfirm()">confirm</button>
+  <button mat-raised-button [mat-dialog-close]="true" (click)="onConfirm()" color="warn">confirm</button>
   <button mat-raised-button [mat-dialog-close]="false" cdkFocusInitial>cancel</button>
 </div>

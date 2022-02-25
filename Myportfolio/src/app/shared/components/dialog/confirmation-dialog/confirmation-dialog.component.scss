@@ -1,3 +1,10 @@
 .button-position{
     float:right;
 }
+.radio-group{
+    display:flex;
+    flex-direction:column;
+    margin: 15px 0;
+    justify-content: space-between;
+    padding-bottom:10px;
+}
