@@ -1,6 +1,8 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { DataService } from 'src/app/Services/data.service';
+import { MatDialog } from '@angular/material/dialog';
+import { ConfirmationDialogComponent } from '../dialog/confirmation-dialog/confirmation-dialog.component';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +12,7 @@ import { DataService } from 'src/app/Services/data.service';
 export class HeaderComponent implements OnInit {
   pageName: string = '';
   searchFormControl = new FormControl();
-  constructor(private dataservice: DataService) {}
+  constructor(private dataservice: DataService, public dialog: MatDialog) {}
   @Output() toggleSideBarForMe: EventEmitter<any> = new EventEmitter();
   ngOnInit(): void {
     this.dataservice.pagedata.subscribe((data): any => {
@@ -22,5 +24,11 @@ export class HeaderComponent implements OnInit {
     setTimeout(() => {
       window.dispatchEvent(new Event('resize'));
     }, 300);
+  }
+  showPreferencesPopup(): void {
+    const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
+      width: '250px',
+      data: { title: 'Preferences', message: 'empty' },
+    });
   }
 }

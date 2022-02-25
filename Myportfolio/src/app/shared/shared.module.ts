@@ -15,6 +15,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { RouterModule } from '@angular/router';
 import { WorkInProgressComponent } from './components/work-in-progress/work-in-progress.component';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -35,6 +36,7 @@ import { WorkInProgressComponent } from './components/work-in-progress/work-in-p
     MatListModule,
     MatExpansionModule,
     RouterModule,
+    MatDialogModule,
   ],
   exports: [
     HeaderComponent,
