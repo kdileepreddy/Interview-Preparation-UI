@@ -8,3 +8,10 @@
     justify-content: space-between;
     padding-bottom:10px;
 }
+.label{
+    margin-top:15px;
+}
+.mat-dialog-content.form-field{
+    display:flex;
+    flex-direction:column;
+}

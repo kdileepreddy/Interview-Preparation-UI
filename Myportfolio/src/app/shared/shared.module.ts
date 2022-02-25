@@ -15,10 +15,11 @@ import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { RouterModule } from '@angular/router';
 import { WorkInProgressComponent } from './components/work-in-progress/work-in-progress.component';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import { ConfirmationDialogComponent } from './components/dialog/confirmation-dialog/confirmation-dialog.component';
-import {MatRadioModule} from '@angular/material/radio';
+import { MatRadioModule } from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -26,7 +27,7 @@ import { FormsModule } from '@angular/forms';
     SidenavHeaderComponent,
     SidenavContentComponent,
     WorkInProgressComponent,
-    ConfirmationDialogComponent
+    ConfirmationDialogComponent,
   ],
   imports: [
     CommonModule,
@@ -42,7 +43,8 @@ import { FormsModule } from '@angular/forms';
     RouterModule,
     MatDialogModule,
     MatRadioModule,
-    FormsModule
+    FormsModule,
+    MatSelectModule,
   ],
   exports: [
     HeaderComponent,
@@ -50,7 +52,7 @@ import { FormsModule } from '@angular/forms';
     SidenavHeaderComponent,
     SidenavContentComponent,
     WorkInProgressComponent,
-    ConfirmationDialogComponent
+    ConfirmationDialogComponent,
   ],
 })
 export class SharedModule {}

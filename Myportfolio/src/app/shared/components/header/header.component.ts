@@ -27,8 +27,8 @@ export class HeaderComponent implements OnInit {
   }
   showPreferencesPopup(): void {
     const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
-      width: '400px',
-      height: '300px',
+      width: '450px',
+      height: '400px',
       data: { title: 'Preferences', message: 'empty' },
     });
   }
