@@ -14,12 +14,14 @@ import { SidenavContentComponent } from './components/sidenav-content/sidenav-co
 import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { RouterModule } from '@angular/router';
+import { WorkInProgressComponent } from './components/work-in-progress/work-in-progress.component';
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     SidenavHeaderComponent,
-    SidenavContentComponent
+    SidenavContentComponent,
+    WorkInProgressComponent,
   ],
   imports: [
     CommonModule,
@@ -39,6 +41,7 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     SidenavHeaderComponent,
     SidenavContentComponent,
+    WorkInProgressComponent,
   ],
 })
 export class SharedModule {}

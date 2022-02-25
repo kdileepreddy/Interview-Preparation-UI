@@ -24,22 +24,23 @@ mat-sidenav.mat-closed.mat-locked-open-add-active {
   top: 0;
   z-index: 1;
   overflow: hidden;
-
+  left: 0;
   right: 0;
 }
 
 .content {
-  margin-top: 10vh;
+  margin-top: 11vh;
   padding: 25px;
   background-color: #79cbb8;
   width: auto;
-  height: 100%;
+  height: 250%;
 }
 
 .content-width {
-  width: 84%;
+  width: auto;
+  position: absolute;
 }
 
 .full-content-width {
-  width: 100%;
+  width: auto;
 }

@@ -13,7 +13,7 @@ import { InterestingFactsComponent } from './components/interesting-facts/intere
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SharedModule } from './shared/shared.module';
-import { YouTubePlayerModule } from "@angular/youtube-player";
+import { YouTubePlayerModule } from '@angular/youtube-player';
 import { AutoplayDirective } from './directives/autoplay.directive';
 import { SafePipe } from './pipes/safe.pipe';
 import { MatIconModule } from '@angular/material/icon';
@@ -27,7 +27,7 @@ import { MatIconModule } from '@angular/material/icon';
     MyApplicationsComponent,
     InterestingFactsComponent,
     AutoplayDirective,
-    SafePipe
+    SafePipe,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +38,7 @@ import { MatIconModule } from '@angular/material/icon';
     FlexLayoutModule,
     SharedModule,
     YouTubePlayerModule,
-    MatIconModule
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
