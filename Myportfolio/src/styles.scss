@@ -1,28 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-.deeppurpleAmber{
-     background-color:#500472;
-     color:#79cbb8;
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.deeppurpleAmberIcon{
-     color:#79cbb8;
-}
-
-.indigoPink{
-     background-color:#3f51b5;
-     color:#fff;
-}
-
-
-.deeppurpleAmber-nav-link {
+.deeppurpleAmber {
+  background-color: #500472;
   color: #79cbb8;
-
-  &.deeppurpleAmber-active-link {
-    background-color: #79cbb8;
-    color:#500472;
-  }
 }
+
+.deeppurpleAmberIcon {
+  color: #79cbb8;
+}
+
+.deeppurpleAmberTitle {
+  font-weight: 500;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  margin-right: 5px;
+  color: #79cbb8;
+}
+
+.deeppurpleAmberheader {
+  background-color: #79cbb8;
+  color: #500472;
+  width: 100%;
+}
+
+.deeppurpleAmbercontent {
+  margin-top: 11vh;
+  padding: 25px;
+  background-color: #79cbb8;
+  width: auto;
+  height: 500%;
+}
+
+.deeppurpleAmber-button {
+  background-color: #500472;
+  color: #79cbb8;
+}
+
+.deeppurpleAmberSearch {
+  background-color: #fff;
+}
+
+.menuItem{
+     
+}
+
+.indigoPink {
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.indigoPinkTitle {
+  font-weight: 500;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  margin-right: 5px;
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.indigoPinkheader {
+  background-color: #fff;
+  color: #3f51b5;
+  width: 100%;
+}
+
+.indigoPinkcontent {
+  margin-top: 11vh;
+  padding: 25px;
+  background-color: #fff;
+  width: auto;
+  height: 500%;
+}
+
+.indigoPink-button {
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.indigoPinkSearch {
+  background-color: #ADD8E6;
+   }

@@ -27,7 +27,6 @@ export class SidenavContentComponent implements OnInit {
     private renderer: Renderer2
   ) {}
   ngOnInit(): void {
-    this.styleservice.themeJson;
     this.styleservice.styleData.subscribe((data) => {
       this.theme = data;
       this.MatExpansionPanel = this.theme;

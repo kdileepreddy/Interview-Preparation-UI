@@ -7,23 +7,26 @@ import { BehaviorSubject, Observable, Subject } from 'rxjs';
 export class StyleService {
   public themeJson: any = {
     deeppurpleAmber: {
-      backgroundColor: '#fff',
-      buttonColor: '#ffc107',
+      title: 'deeppurpleAmberTitle',
+      header: 'deeppurpleAmberheader',
       headingColor: '#673ab7',
-      label: 'Deep Purple & Amber',
-      value: 'deeppurple-amber',
-      color: '#ffc107',
+      content: 'deeppurpleAmbercontent',
+      button: 'deeppurpleAmber-button',
+      search: 'deeppurpleAmberSearch',
       iconColor: 'deeppurpleAmberIcon',
       navlink: 'deeppurpleAmber-nav-link',
-      activelink: 'deeppurpleAmber-active-link'
+      activelink: 'deeppurpleAmber-active-link',
     },
 
     indigoPink: {
-      backgroundColor: '#fff',
-      buttonColor: '#ff4081',
+      title: 'indigoPinkTitle',
+      header: 'indigoPinkheader',
       headingColor: '#3f51b5',
-      label: 'Indigo & Pink',
-      value: 'indigo-pink',
+      content: 'indigoPinkcontent',
+      button: 'indigoPink-button',
+      search: 'indigoPinkSearch',
+      navlink: 'indigoPink-nav-link',
+      activelink: 'indigoPink-active-link',
     },
     pinkBluegrey: {
       backgroundColor: '#303030',

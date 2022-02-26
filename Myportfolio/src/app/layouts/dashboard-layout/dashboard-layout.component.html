@@ -7,7 +7,7 @@
     <div class="header" [ngClass]="sideBarOpen?'content-width':'full-content-width'">
       <app-header (toggleSideBarForMe)="sideBarToggler($event)"></app-header>
     </div>
-    <div class="content">
+    <div [class]="content">
       <router-outlet>
       </router-outlet>
     </div>

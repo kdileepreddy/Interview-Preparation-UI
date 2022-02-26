@@ -1,4 +1,4 @@
-<mat-toolbar class="header mat-elevation-z4">
+<mat-toolbar [class]="header">
     <mat-toolbar-row>
         <button mat-icon-button (click)="toggleSideBar()">
             <mat-icon>menu</mat-icon>
@@ -8,20 +8,20 @@
 
         <div class="Spacing">
             <div class="input-icons">
-                <input type="search" class="example-full-width" [formControl]="searchFormControl" placeholder="search">
+                <input type="search" class="example-full-width" [formControl]="searchFormControl" placeholder="search" [class]="search">
                 <a href=""><i class="fa fa-search icon search-color"></i></a>
             </div>
             <mat-icon>email</mat-icon>
             <mat-icon class="example-icon" aria-hidden="false" (click)="showPreferencesPopup()" aria-label="Example notifications icon">settings
             </mat-icon>
-            <button mat-raised-button class="account-button" [matMenuTriggerFor]="menu">
+            <button mat-raised-button [class]="accountButton" [matMenuTriggerFor]="menu">
                 <mat-icon>account_box</mat-icon>&nbsp;Dileep Reddy
             </button>
             <mat-menu #menu="matMenu">
-                <button mat-menu-item>
+                <button mat-menu-item [class]="menuItem">
                     <mat-icon>account_circle</mat-icon>&nbsp;Profile
                 </button>
-                <button mat-menu-item>
+                <button mat-menu-item [class]="menuItem">
                     <mat-icon>logout</mat-icon>&nbsp;Logout
                 </button>
             </mat-menu>

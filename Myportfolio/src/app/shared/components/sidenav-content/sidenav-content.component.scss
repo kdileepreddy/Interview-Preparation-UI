@@ -32,4 +32,20 @@
     color:#500472;
   }
 }*/
+.deeppurpleAmber-nav-link {
+  color: #79cbb8;
 
+  &.deeppurpleAmber-active-link {
+    background-color: #79cbb8;
+    color:#500472;
+  }
+}
+
+.indigoPink-nav-link {
+  color: #fff;
+
+  &.indigoPink-active-link {
+    background-color: #fff;
+    color:#3f51b5;
+  }
+}
