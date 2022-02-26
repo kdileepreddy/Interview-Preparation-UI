@@ -8,16 +8,18 @@
 
         <div class="Spacing">
             <div class="input-icons">
-                <input type="search" class="example-full-width" [formControl]="searchFormControl" placeholder="search" [class]="search">
+                <input type="search" class="example-full-width" [formControl]="searchFormControl" placeholder="search"
+                    [class]="search">
                 <a href=""><i class="fa fa-search icon search-color"></i></a>
             </div>
             <mat-icon>email</mat-icon>
-            <mat-icon class="example-icon" aria-hidden="false" (click)="showPreferencesPopup()" aria-label="Example notifications icon">settings
+            <mat-icon class="example-icon" aria-hidden="false" (click)="showPreferencesPopup()"
+                aria-label="Example notifications icon">settings
             </mat-icon>
             <button mat-raised-button [class]="accountButton" [matMenuTriggerFor]="menu">
                 <mat-icon>account_box</mat-icon>&nbsp;Dileep Reddy
             </button>
-            <mat-menu #menu="matMenu">
+            <mat-menu #menu="matMenu" [class]="menuItem">
                 <button mat-menu-item [class]="menuItem">
                     <mat-icon>account_circle</mat-icon>&nbsp;Profile
                 </button>

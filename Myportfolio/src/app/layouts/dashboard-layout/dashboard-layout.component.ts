@@ -9,9 +9,9 @@ import { StyleService } from 'src/app/Services/style.service';
 })
 export class DashboardLayoutComponent implements OnInit {
   sideBarOpen: BooleanInput = true;
-  public sidenavColor:any;
-  public content:any;
-  constructor( private styleservice: StyleService) {}
+  public sidenavColor: any;
+  public content: any;
+  constructor(private styleservice: StyleService) {}
 
   ngOnInit(): void {
     this.styleservice.styleData.subscribe((data) => {

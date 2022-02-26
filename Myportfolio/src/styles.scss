@@ -9,31 +9,31 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.deeppurpleAmber {
+.magentaAndRedOrange {
   background-color: #500472;
   color: #79cbb8;
 }
 
-.deeppurpleAmberIcon {
+.magentaAndRedOrangeIcon {
   color: #79cbb8;
 }
 
-.deeppurpleAmberTitle {
+.magentaAndRedOrangeTitle {
   font-weight: 500;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   font-size: 20px;
   line-height: 32px;
-  margin-right: 5px;
+  margin-right: 3px;
   color: #79cbb8;
 }
 
-.deeppurpleAmberheader {
+.magentaAndRedOrangeheader {
   background-color: #79cbb8;
   color: #500472;
   width: 100%;
 }
 
-.deeppurpleAmbercontent {
+.magentaAndRedOrangecontent {
   margin-top: 11vh;
   padding: 25px;
   background-color: #79cbb8;
@@ -41,17 +41,39 @@ body {
   height: 500%;
 }
 
-.deeppurpleAmber-button {
+.magentaAndRedOrange-button {
   background-color: #500472;
   color: #79cbb8;
 }
 
-.deeppurpleAmberSearch {
+.magentaAndRedOrangeSearch {
   background-color: #fff;
 }
 
-.menuItem{
-     
+.magentaAndRedOrangeMenuItem {
+  background-color: #79cbb8;
+  color: #500472;
+  overflow-x: hidden !important;
+}
+
+.magentaAndRedOrangelikeButton {
+  background-color: #500472;
+  color: #79cbb8;
+  border: 0px;
+  width: 30%;
+  line-height: 25px;
+  display: flex;
+  justify-content: flex-start;
+  height: 25px;
+  margin-top: 2px;
+}
+
+.magentaAndRedOrangeshareButton {
+  color: #500472;
+  border: 0px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .indigoPink {
@@ -89,5 +111,165 @@ body {
 }
 
 .indigoPinkSearch {
-  background-color: #ADD8E6;
-   }
+  background-color: #add8e6;
+}
+
+.indigoPinkMenuItem {
+  background-color: #fff;
+  color: #3f51b5;
+  overflow-x: hidden !important;
+}
+
+.indigoPinklikeButton {
+  background-color: #3f51b5;
+  color: #fff;
+  border: 0px;
+  width: 30%;
+  line-height: 25px;
+  display: flex;
+  justify-content: flex-start;
+  height: 25px;
+  margin-top: 2px;
+}
+
+.indigoPinkshareButton {
+  color: #3f51b5;
+  border: 0px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pinkBluegrey {
+  background-color: #05386b;
+  color: #5cdb95;
+}
+
+.pinkBluegreyIcon {
+  color: #5cdb95;
+}
+
+.pinkBluegreyTitle {
+  font-weight: 500;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  margin-right: 3px;
+  color: #5cdb95;
+}
+
+.pinkBluegreyheader {
+  background-color: #5cdb95;
+  color: #05386b;
+  width: 100%;
+}
+
+.pinkBluegreycontent {
+  margin-top: 11vh;
+  padding: 25px;
+  background-color: #5cdb95;
+  width: auto;
+  height: 500%;
+}
+
+.pinkBluegrey-button {
+  background-color: #05386b;
+  color: #5cdb95;
+}
+
+.pinkBluegreySearch {
+  background-color: #379683;
+}
+
+.pinkBluegreyMenuItem {
+  background-color: #5cdb95;
+  color: #05386b;
+  overflow-x: hidden !important;
+}
+
+.pinkBluegreylikeButton {
+  background-color: #5cdb95;
+  color: #05386b;
+  border: 0px;
+  width: 30%;
+  line-height: 25px;
+  display: flex;
+  justify-content: flex-start;
+  height: 25px;
+  margin-top: 2px;
+}
+
+.pinkBluegreyshareButton {
+  color: #05386b;
+  border: 0px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.RedAndLively {
+  background-color: #5d001e;
+  color: #e3e2df;
+}
+
+.RedAndLivelyIcon {
+  color: #e3e2df;
+}
+
+.RedAndLivelyTitle {
+  font-weight: 500;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  margin-right: 3px;
+  color: #e3e2df;
+}
+
+.RedAndLivelyheader {
+  background-color: #e3e2df;
+  color: #5d001e;
+  width: 100%;
+}
+
+.RedAndLivelycontent {
+  margin-top: 11vh;
+  padding: 25px;
+  background-color: #e3e2df;
+  width: auto;
+  height: 500%;
+}
+
+.RedAndLively-button {
+  background-color: #5d001e;
+  color: #e3e2df;
+}
+
+.RedAndLivelySearch {
+  background-color: #ee4c7c;
+}
+
+.RedAndLivelyMenuItem {
+  background-color: #e3e2df;
+  color: #5d001e;
+  overflow-x: hidden !important;
+}
+
+.RedAndLivelylikeButton {
+  background-color: #e3e2df;
+  color: #5d001e;
+  border: 0px;
+  width: 30%;
+  line-height: 25px;
+  display: flex;
+  justify-content: flex-start;
+  height: 25px;
+  margin-top: 2px;
+}
+
+.RedAndLivelyshareButton {
+  color: #5d001e;
+  border: 0px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: flex-end;
+}

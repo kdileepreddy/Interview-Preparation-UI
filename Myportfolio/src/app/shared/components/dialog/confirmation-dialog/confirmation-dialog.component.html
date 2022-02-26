@@ -1,34 +1,33 @@
 <h1 mat-dialog-title>{{title}}</h1>
 <mat-divider></mat-divider>
 <div mat-dialog-content>
- <div class="form-field">
- <h4 class="label">What do you like to change?</h4>
- <mat-form-field appearance="fill">
-    <mat-label>customize look and feel</mat-label>
-    <mat-select [(ngModel)]="selectedValue" name="preferences">
-      <mat-option *ngFor="let preference of preferences" [value]="preference">
-        {{preference}}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
+  <div class="form-field">
+    <h4 class="label">What do you like to change?</h4>
+    <mat-form-field appearance="fill">
+      <mat-label>customize look and feel</mat-label>
+      <mat-select [(ngModel)]="selectedValue" name="preferences">
+        <mat-option *ngFor="let preference of preferences" [value]="preference">
+          {{preference}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
   </div>
   <div *ngIf="selectedValue === 'Cards per row'">
- <mat-radio-group aria-label="Select an option" class="radio-group" [(ngModel)]="NumberOfCards">
-  <mat-radio-button [value]="1">one card per row</mat-radio-button>
-  <mat-radio-button [value]="2">two cards per row</mat-radio-button>
-  <mat-radio-button [value]="3">three cards per row</mat-radio-button>
-  <mat-radio-button [value]="4">four cards per row</mat-radio-button>
-</mat-radio-group> 
-</div>
-<div *ngIf="selectedValue === 'Theme of the application'">
- <mat-radio-group aria-label="Select an option" class="radio-group" [(ngModel)]="theme">
-  <mat-radio-button [value]="'Ultravoilet and Pink'">Ultravoilet and Pink</mat-radio-button>
-  <mat-radio-button [value]="'deeppurpleAmber'">Deep purple and Amber</mat-radio-button>
-  <mat-radio-button [value]="'indigoPink'">Indigo and pink</mat-radio-button>
-  <mat-radio-button [value]="'pinkBluegrey'">PinkBlue and Grey</mat-radio-button>
-  <mat-radio-button [value]="'purpleGreen'">Purple and Green</mat-radio-button>
-</mat-radio-group> 
-</div>
+    <mat-radio-group aria-label="Select an option" class="radio-group" [(ngModel)]="NumberOfCards">
+      <mat-radio-button [value]="1">one card per row</mat-radio-button>
+      <mat-radio-button [value]="2">two cards per row</mat-radio-button>
+      <mat-radio-button [value]="3">three cards per row</mat-radio-button>
+      <mat-radio-button [value]="4">four cards per row</mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <div *ngIf="selectedValue === 'Theme of the application'">
+    <mat-radio-group aria-label="Select an option" class="radio-group" [(ngModel)]="theme">
+      <mat-radio-button [value]="'magentaAndRedOrange'">Magenta and RedOrange</mat-radio-button>
+      <mat-radio-button [value]="'indigoPink'">Indigo and pink</mat-radio-button>
+      <mat-radio-button [value]="'pinkBluegrey'">Cool and Fresh</mat-radio-button>
+      <mat-radio-button [value]="'RedAndLively'">Red and Lively</mat-radio-button>
+    </mat-radio-group>
+  </div>
 </div>
 <mat-divider></mat-divider>
 <div mat-dialog-actions class="button-position">

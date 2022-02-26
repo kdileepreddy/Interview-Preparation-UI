@@ -2,6 +2,7 @@ import { Component, HostListener, Inject, OnInit, Output } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { DOCUMENT } from '@angular/common';
 import { DataService } from 'src/app/Services/data.service';
+import { StyleService } from 'src/app/Services/style.service';
 @Component({
   selector: 'app-interesting-facts',
   templateUrl: './interesting-facts.component.html',
@@ -10,11 +11,14 @@ import { DataService } from 'src/app/Services/data.service';
 export class InterestingFactsComponent implements OnInit {
   private window: any;
   public NumberOfCards: any;
+  public likeButton: any;
+  public shareButton: any;
 
   constructor(
     private sanitizer: DomSanitizer,
     @Inject(DOCUMENT) private document: Document,
-    private dataservice: DataService
+    private dataservice: DataService,
+    private styleservice: StyleService
   ) {
     this.window = this.document.defaultView;
   }
@@ -30,6 +34,10 @@ export class InterestingFactsComponent implements OnInit {
     this.NumberOfCards = this.dataservice.NumberOfCards;
     this.dataservice.carddata.subscribe((data) => {
       this.NumberOfCards = data;
+    });
+    this.styleservice.styleData.subscribe((data) => {
+      this.likeButton = this.styleservice.themeJson[data].likebutton;
+      this.shareButton = this.styleservice.themeJson[data].sharebutton;
     });
   }
   display: boolean = true;

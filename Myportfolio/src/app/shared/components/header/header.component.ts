@@ -31,7 +31,7 @@ export class HeaderComponent implements OnInit {
       this.header = this.styleservice.themeJson[data].header;
       this.accountButton = this.styleservice.themeJson[data].button;
       this.search = this.styleservice.themeJson[data].search;
-      this.menuItem = data;
+      this.menuItem = this.styleservice.themeJson[data].menuitem;
     });
   }
   toggleSideBar() {
@@ -43,7 +43,7 @@ export class HeaderComponent implements OnInit {
   showPreferencesPopup(): void {
     const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
       width: '450px',
-      height: '400px',
+      height: '420px',
       data: { title: 'Preferences', message: 'empty' },
     });
   }

@@ -33,6 +33,7 @@ export class ConfirmationDialogComponent implements OnInit {
     this.title = this.dialogdata.title;
     this.message = this.dialogdata.message;
     this.NumberOfCards = this.dataservice.NumberOfCards;
+    this.theme = this.styleservice.defaultTheme;
   }
 
   onConfirm(): void {
