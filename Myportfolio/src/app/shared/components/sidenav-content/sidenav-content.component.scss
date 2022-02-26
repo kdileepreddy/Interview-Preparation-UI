@@ -1,10 +1,10 @@
 .displayname {
   padding-left: 5px;
 }
-.mat-expansion-panel{
+/*.mat-expansion-panel{
     background-color:#500472;
     color:#79cbb8;
-}
+}*/
 ::ng-deep .mat-expansion-panel-header > .mat-expansion-indicator::after {
     color: #79cbb8;
 }
@@ -21,15 +21,15 @@
   margin-left: 40px;
   padding: 10px;
   font-size: 100px;
-  color: #79cbb8;
+  /*color: #79cbb8;*/
 }
 
-.nav-link {
+/*.nav-link {
   color: #79cbb8;
 
   &.active-link {
     background-color: #79cbb8;
     color:#500472;
   }
-}
+}*/
 

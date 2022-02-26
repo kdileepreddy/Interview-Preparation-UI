@@ -3,3 +3,26 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.deeppurpleAmber{
+     background-color:#500472;
+     color:#79cbb8;
+}
+
+.deeppurpleAmberIcon{
+     color:#79cbb8;
+}
+
+.indigoPink{
+     background-color:#3f51b5;
+     color:#fff;
+}
+
+
+.deeppurpleAmber-nav-link {
+  color: #79cbb8;
+
+  &.deeppurpleAmber-active-link {
+    background-color: #79cbb8;
+    color:#500472;
+  }
+}

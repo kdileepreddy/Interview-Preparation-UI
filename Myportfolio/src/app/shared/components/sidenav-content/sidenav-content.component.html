@@ -1,20 +1,20 @@
-<mat-icon class="icon">account_circle</mat-icon>
+<mat-icon [class]="accountIcon">account_circle</mat-icon>
 <mat-nav-list>
     <span *ngFor="let item of menu">
-      <span *ngIf="item.children && item.children.length > 0">
+      <span *ngIf="item.children && item.children.length > 0" #matExpansionPanel>
         <mat-accordion>
-          <mat-expansion-panel class="mat-elevation-z0">
+          <mat-expansion-panel [class]="MatExpansionPanel">
             <mat-expansion-panel-header>
               <mat-panel-title>
                 <!-- Cabeceras del submenu -->
-                <div fxLayout="row" fxLayoutAlign="start center" class="nav-link"> 
+                <div fxLayout="row" fxLayoutAlign="start center" [class]="themeNavLink"> 
                   <mat-icon>{{item.iconName}}</mat-icon>
                   <span class="displayname">{{item.displayName}}</span>
                 </div>
               </mat-panel-title>
             </mat-expansion-panel-header>
             <span *ngFor="let child of item.children">
-              <mat-list-item class="nav-link" [routerLink]="child.route" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+              <mat-list-item [class]="themeNavLink" [routerLink]="child.route" [routerLinkActive]="themeActiveLink" [routerLinkActiveOptions]="{exact:
                 true}">
                 <!-- Entradas de cada submenú  -->
                 <div fxLayout="row" fxLayoutAlign="space-between center" > 
@@ -27,7 +27,7 @@
         </mat-accordion>
       </span>
       <span *ngIf="!item.children || item.children.length === 0">
-        <mat-list-item class="nav-link" [routerLink]="item.route" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+        <mat-list-item [class]="themeNavLink" [routerLink]="item.route" [routerLinkActive]="themeActiveLink" [routerLinkActiveOptions]="{exact:
           true}">
           <!-- Entradas principales -->
           <div fxLayout="row" fxLayoutAlign="space-between center">

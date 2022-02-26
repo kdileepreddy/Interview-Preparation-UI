@@ -38,6 +38,6 @@ export class ConfirmationDialogComponent implements OnInit {
   onConfirm(): void {
     this.dataservice.carddata$.next(this.NumberOfCards);
     this.dataservice.NumberOfCards = this.NumberOfCards;
-    this.styleservice.styleData$.next(this.selectedValue);
+    this.styleservice.styleData$.next(this.theme);
   }
 }
