@@ -1,8 +1,12 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav mode="side" [opened]="sideBarOpen" [class]="sidenavColor">
-    <app-sidenav-header></app-sidenav-header>
-    <app-sidenav-content></app-sidenav-content>
+
+  <mat-sidenav mode="side" [opened]="sideBarOpen" [class]="sideNavColor">
+    
+      <app-sidenav-header></app-sidenav-header>
+      <app-sidenav-content></app-sidenav-content>
+    
   </mat-sidenav>
+
   <mat-sidenav-content>
     <div class="header" [ngClass]="sideBarOpen?'content-width':'full-content-width'">
       <app-header (toggleSideBarForMe)="sideBarToggler($event)"></app-header>

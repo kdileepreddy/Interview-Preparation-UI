@@ -9,6 +9,19 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+$desktop: 960px;
+$tablet: 768px;
+$mobile-large: 640px;
+$mobile: 480px;
+$mobile-small: 300px;
+
+// @media only screen and (max-width: $mobile-small) { 
+
+//   .magentaAndRedOrange {
+//     display:none;
+//   }
+// }
+
 .magentaAndRedOrange {
   background-color: #500472;
   color: #79cbb8;
@@ -72,8 +85,8 @@ body {
   color: #500472;
   border: 0px;
   margin-left: 5px;
-  display: flex;
-  justify-content: flex-end;
+  //display: flex;
+//justify-content: flex-end;
 }
 
 .indigoPink {
@@ -136,8 +149,8 @@ body {
   color: #3f51b5;
   border: 0px;
   margin-left: 5px;
-  display: flex;
-  justify-content: flex-end;
+  //display: flex;
+//justify-content: flex-end;
 }
 
 .pinkBluegrey {
@@ -188,8 +201,8 @@ body {
 }
 
 .pinkBluegreylikeButton {
-  background-color: #5cdb95;
-  color: #05386b;
+  background-color: #05386b;
+  color: #5cdb95;
   border: 0px;
   width: 30%;
   line-height: 25px;
@@ -203,8 +216,8 @@ body {
   color: #05386b;
   border: 0px;
   margin-left: 5px;
-  display: flex;
-  justify-content: flex-end;
+  //display: flex;
+//justify-content: flex-end;
 }
 
 .RedAndLively {
@@ -255,8 +268,8 @@ body {
 }
 
 .RedAndLivelylikeButton {
-  background-color: #e3e2df;
-  color: #5d001e;
+  background-color: #5d001e;
+  color: #e3e2df;
   border: 0px;
   width: 30%;
   line-height: 25px;
@@ -270,6 +283,6 @@ body {
   color: #5d001e;
   border: 0px;
   margin-left: 5px;
-  display: flex;
-  justify-content: flex-end;
+  //display: flex;
+//justify-content: flex-end;
 }
