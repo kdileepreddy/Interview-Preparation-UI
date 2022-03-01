@@ -51,7 +51,7 @@
                 </g>
             </svg>
         </div>
-        <span [class]="sideNavTitle">Dileep Reddy</span>
+        <span [ngClass]="sideNavTitle?sideNavTitle+' side-nav-title':''">Dileep Reddy</span>
     </mat-toolbar-row>
 
 </mat-toolbar>

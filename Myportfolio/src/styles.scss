@@ -32,18 +32,12 @@ $mobile-small: 300px;
 }
 
 .magentaAndRedOrangeTitle {
-  font-weight: 500;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
-  margin-right: 3px;
   color: #79cbb8;
 }
 
 .magentaAndRedOrangeheader {
   background-color: #79cbb8;
   color: #500472;
-  width: 100%;
 }
 
 // @media (max-width: 599px)
@@ -54,11 +48,7 @@ $mobile-small: 300px;
 // }
 
 .magentaAndRedOrangecontent {
-  padding: 25px;
   background-color: #79cbb8;
-  width: auto;
-  height: 500%;
-  position: absolute;
 }
 
 .magentaAndRedOrange-button {
@@ -79,21 +69,10 @@ $mobile-small: 300px;
 .magentaAndRedOrangelikeButton {
   background-color: #500472;
   color: #79cbb8;
-  border: 0px;
-  width: 30%;
-  line-height: 25px;
-  display: flex;
-  justify-content: flex-start;
-  height: 25px;
-  margin-top: 2px;
 }
 
 .magentaAndRedOrangeshareButton {
   color: #500472;
-  border: 0px;
-  margin-left: 5px;
-  //display: flex;
-  //justify-content: flex-end;
 }
 
 .indigoPink {
@@ -102,11 +81,6 @@ $mobile-small: 300px;
 }
 
 .indigoPinkTitle {
-  font-weight: 500;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
-  margin-right: 5px;
   background-color: #3f51b5;
   color: #fff;
 }
@@ -114,14 +88,10 @@ $mobile-small: 300px;
 .indigoPinkheader {
   background-color: #fff;
   color: #3f51b5;
-  width: 100%;
 }
 
 .indigoPinkcontent {
-  padding: 25px;
   background-color: #fff;
-  width: auto;
-  height: 500%;
 }
 
 .indigoPink-button {
@@ -142,21 +112,10 @@ $mobile-small: 300px;
 .indigoPinklikeButton {
   background-color: #3f51b5;
   color: #fff;
-  border: 0px;
-  width: 30%;
-  line-height: 25px;
-  display: flex;
-  justify-content: flex-start;
-  height: 25px;
-  margin-top: 2px;
 }
 
 .indigoPinkshareButton {
   color: #3f51b5;
-  border: 0px;
-  margin-left: 5px;
-  //display: flex;
-  //justify-content: flex-end;
 }
 
 .pinkBluegrey {
@@ -169,25 +128,16 @@ $mobile-small: 300px;
 }
 
 .pinkBluegreyTitle {
-  font-weight: 500;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
-  margin-right: 3px;
   color: #5cdb95;
 }
 
 .pinkBluegreyheader {
   background-color: #5cdb95;
   color: #05386b;
-  width: 100%;
 }
 
 .pinkBluegreycontent {
-  padding: 25px;
   background-color: #5cdb95;
-  width: auto;
-  height: 500%;
 }
 
 .pinkBluegrey-button {
@@ -208,21 +158,10 @@ $mobile-small: 300px;
 .pinkBluegreylikeButton {
   background-color: #05386b;
   color: #5cdb95;
-  border: 0px;
-  width: 30%;
-  line-height: 25px;
-  display: flex;
-  justify-content: flex-start;
-  height: 25px;
-  margin-top: 2px;
 }
 
 .pinkBluegreyshareButton {
   color: #05386b;
-  border: 0px;
-  margin-left: 5px;
-  //display: flex;
-  //justify-content: flex-end;
 }
 
 .RedAndLively {
@@ -235,25 +174,16 @@ $mobile-small: 300px;
 }
 
 .RedAndLivelyTitle {
-  font-weight: 500;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
-  margin-right: 3px;
   color: #e3e2df;
 }
 
 .RedAndLivelyheader {
   background-color: #e3e2df;
   color: #5d001e;
-  width: 100%;
 }
 
 .RedAndLivelycontent {
-  padding: 25px;
   background-color: #e3e2df;
-  width: auto;
-  height: 500%;
 }
 
 .RedAndLively-button {
@@ -274,19 +204,8 @@ $mobile-small: 300px;
 .RedAndLivelylikeButton {
   background-color: #5d001e;
   color: #e3e2df;
-  border: 0px;
-  width: 30%;
-  line-height: 25px;
-  display: flex;
-  justify-content: flex-start;
-  height: 25px;
-  margin-top: 2px;
 }
 
 .RedAndLivelyshareButton {
   color: #5d001e;
-  border: 0px;
-  margin-left: 5px;
-  //display: flex;
-  //justify-content: flex-end;
 }

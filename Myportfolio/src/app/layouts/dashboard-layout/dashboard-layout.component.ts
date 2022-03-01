@@ -11,11 +11,13 @@ export class DashboardLayoutComponent implements OnInit {
   sideBarOpen: BooleanInput = true;
   public sideNavColor: any;
   public content: any;
+  public contentCss: any;
   constructor(private styleservice: StyleService) {}
 
   ngOnInit(): void {
     this.styleservice.styleData.subscribe((data) => {
       this.sideNavColor = data;
+      this.contentCss =data;
       this.content = this.styleservice.themeJson[data].content;
     });
   }
