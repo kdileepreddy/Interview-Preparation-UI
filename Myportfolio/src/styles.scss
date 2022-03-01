@@ -15,7 +15,7 @@ $mobile-large: 640px;
 $mobile: 480px;
 $mobile-small: 300px;
 
-// @media only screen and (max-width: $mobile-small) { 
+// @media only screen and (max-width: $mobile-small) {
 
 //   .magentaAndRedOrange {
 //     display:none;
@@ -58,7 +58,7 @@ $mobile-small: 300px;
   background-color: #79cbb8;
   width: auto;
   height: 500%;
-  position:absolute
+  position: absolute;
 }
 
 .magentaAndRedOrange-button {
@@ -93,7 +93,7 @@ $mobile-small: 300px;
   border: 0px;
   margin-left: 5px;
   //display: flex;
-//justify-content: flex-end;
+  //justify-content: flex-end;
 }
 
 .indigoPink {
@@ -118,7 +118,6 @@ $mobile-small: 300px;
 }
 
 .indigoPinkcontent {
-  margin-top: 64px;
   padding: 25px;
   background-color: #fff;
   width: auto;
@@ -157,7 +156,7 @@ $mobile-small: 300px;
   border: 0px;
   margin-left: 5px;
   //display: flex;
-//justify-content: flex-end;
+  //justify-content: flex-end;
 }
 
 .pinkBluegrey {
@@ -185,7 +184,6 @@ $mobile-small: 300px;
 }
 
 .pinkBluegreycontent {
-  margin-top: 64px;
   padding: 25px;
   background-color: #5cdb95;
   width: auto;
@@ -224,7 +222,7 @@ $mobile-small: 300px;
   border: 0px;
   margin-left: 5px;
   //display: flex;
-//justify-content: flex-end;
+  //justify-content: flex-end;
 }
 
 .RedAndLively {
@@ -252,7 +250,6 @@ $mobile-small: 300px;
 }
 
 .RedAndLivelycontent {
-  margin-top: 64px;
   padding: 25px;
   background-color: #e3e2df;
   width: auto;
@@ -291,5 +288,5 @@ $mobile-small: 300px;
   border: 0px;
   margin-left: 5px;
   //display: flex;
-//justify-content: flex-end;
+  //justify-content: flex-end;
 }
