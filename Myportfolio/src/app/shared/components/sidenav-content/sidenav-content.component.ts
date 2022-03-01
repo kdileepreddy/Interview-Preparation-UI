@@ -58,6 +58,11 @@ export class SidenavContentComponent implements OnInit {
           route: 'angularContent',
         },
         {
+          displayName: 'Java 8',
+          iconName: 'code',
+          route: 'Java8',
+        },
+        {
           displayName: 'Spring Boot',
           iconName: 'code',
           route: 'springboot-content',

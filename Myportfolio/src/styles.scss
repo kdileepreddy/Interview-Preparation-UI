@@ -46,12 +46,19 @@ $mobile-small: 300px;
   width: 100%;
 }
 
+// @media (max-width: 599px)
+// {
+// .mat-toolbar-row, .mat-toolbar-single-row {
+//     height: 56px;
+// }
+// }
+
 .magentaAndRedOrangecontent {
-  margin-top: 11vh;
   padding: 25px;
   background-color: #79cbb8;
   width: auto;
   height: 500%;
+  position:absolute
 }
 
 .magentaAndRedOrange-button {
@@ -111,7 +118,7 @@ $mobile-small: 300px;
 }
 
 .indigoPinkcontent {
-  margin-top: 11vh;
+  margin-top: 64px;
   padding: 25px;
   background-color: #fff;
   width: auto;
@@ -178,7 +185,7 @@ $mobile-small: 300px;
 }
 
 .pinkBluegreycontent {
-  margin-top: 11vh;
+  margin-top: 64px;
   padding: 25px;
   background-color: #5cdb95;
   width: auto;
@@ -245,7 +252,7 @@ $mobile-small: 300px;
 }
 
 .RedAndLivelycontent {
-  margin-top: 11vh;
+  margin-top: 64px;
   padding: 25px;
   background-color: #e3e2df;
   width: auto;

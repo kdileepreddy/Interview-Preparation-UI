@@ -18,6 +18,8 @@ import { AutoplayDirective } from './directives/autoplay.directive';
 import { SafePipe } from './pipes/safe.pipe';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
+import { Java8Component } from './components/interview-content/java8/java8.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +31,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     InterestingFactsComponent,
     AutoplayDirective,
     SafePipe,
+    Java8Component,
   ],
   imports: [
     BrowserModule,
