@@ -8,10 +8,14 @@ import { DataService } from 'src/app/Services/data.service';
 })
 export class Java8Component implements OnInit {
 
+  public flip:boolean = false;
   constructor(private dataservice: DataService) { }
 
   ngOnInit(): void {
     this.dataservice.pagedata$.next('Java 8');
   }
 
+  cardFlip(): void{
+    this.flip = !this.flip;
+  }
 }

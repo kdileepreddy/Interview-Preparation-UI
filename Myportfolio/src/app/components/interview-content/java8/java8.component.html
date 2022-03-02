@@ -2,26 +2,49 @@
 
     <div class="row g-0">
 
-        <div class="col-md-6 leftContent">
-            <div class="card w-100 leftContent">
-                <div class="card-title">
-                    <h1>Featured</h1>
+        <div class="col-md-6 card-container">
+            <div class="card w-100 leftContent card-flip">
+                <div class="front card-block">
+                    <div class="card-title">
+                        <h2>Streams</h2>
+                    </div>
+                    <div class="card-body">
+                        This is some text within a card body.
+                    </div>
+                    <div class="card-footer">
+                        <button class="flipButton" class="btn btn-primary">Flip</button>
+                    </div>
                 </div>
-                <div class="card-body">
-                    This is some text within a card body.
+                <div class="back card-block">
+                    <div class="card-body">
+                        This is some text within a card body.
+                    </div>
+                    <div class="card-footer">
+                        <button class="flipButton" class="btn btn-primary">Flip</button>
+                    </div>
                 </div>
+
+
             </div>
         </div>
-        <div class="col-md-6 rightContent">
-            <div class="card w-100 rightContent">
+        <div class="col-md-6 card-container">
+            <div class="card w-100 rightContent card-flip">
                 <!-- <div class="card-header">
                     Featured
                 </div> -->
-                <div class="card-body">
-                    This is some text within a card body.
+                <div class="front card-block">
+
+                    <div class="card-body">
+                        front
+                    </div>
+                </div>
+                <div class="back card-block">
+                    <div class="card-body">
+                        This is some text within a card body.
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
- <app-work-in-progress></app-work-in-progress>
+<app-work-in-progress></app-work-in-progress>
