@@ -1,0 +1,32 @@
+.card {
+  // max-width:container;
+  //background: linear-gradient(to right, #500472 50% , white 50%);
+}
+.cardBackground {
+  background: linear-gradient(to right, #500472 50%, white 50%) center !important;
+  color: #79cbb8;
+}
+.flexrow {
+  // max-width: 64rem;
+  display: flex;
+  flex-direction: row;
+  // background-color: #500472;
+  // color: #79cbb8;
+  // background: linear-gradient(to right, #9e08e4 50%, white 50%);
+}
+.leftContent {
+  // padding-right: 0;
+  //  max-width:50%;
+  background-color: #500472 !important;
+  color: #79cbb8;
+  min-height: 450px;
+  border-radius: 0.35rem 0 0 0.35rem;
+}
+.rightContent {
+  // padding-left: 0;
+  // background-color: #fff;
+  // border-color:#500472;
+  // max-width:50%;
+  min-height: 450px;
+  border-radius: 0 0.35rem 0.35rem 0;
+}
