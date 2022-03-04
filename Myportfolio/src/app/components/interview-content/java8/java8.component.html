@@ -2,22 +2,30 @@
 
     <div class="row g-0">
 
-        <div class="col-md-6 card-container">
-            <div class="card w-100 leftContent card-flip">
+        <div class="col-md-6">
+            <flip-card [Card]="'left'">
+                <flip-card-front>
+                    <h2>This is card front</h2>
+                </flip-card-front>
+                <flip-card-back>
+                    <h2>This is card back</h2>
+                </flip-card-back>
+            </flip-card>
+            <!-- <div class="card w-100 leftContent card-flip">
                 <div class="front card-block">
                     <div class="card-title">
                         <h2>Streams</h2>
                     </div>
                     <div class="card-body">
-                        This is some text within a card body.
+                        This is front text within a card body.
                     </div>
-                    <div class="card-footer">
+                    <div >
                         <button class="flipButton" class="btn btn-primary">Flip</button>
                     </div>
                 </div>
                 <div class="back card-block">
                     <div class="card-body">
-                        This is some text within a card body.
+                        This is back text within a card body.
                     </div>
                     <div class="card-footer">
                         <button class="flipButton" class="btn btn-primary">Flip</button>
@@ -25,13 +33,19 @@
                 </div>
 
 
-            </div>
+            </div> -->
         </div>
-        <div class="col-md-6 card-container">
-            <div class="card w-100 rightContent card-flip">
-                <!-- <div class="card-header">
-                    Featured
-                </div> -->
+        <div class="col-md-6">
+            <flip-card>
+                <flip-card-front>
+                    <h2>This is front</h2>
+                </flip-card-front>
+                <flip-card-back>
+                    <h2>This is back</h2>
+                </flip-card-back>
+            </flip-card>
+            <!-- <div class="card w-100 rightContent card-flip">
+        
                 <div class="front card-block">
 
                     <div class="card-body">
@@ -43,8 +57,12 @@
                         This is some text within a card body.
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
+<br>
+<br>
+<br>
+<br>
 <app-work-in-progress></app-work-in-progress>

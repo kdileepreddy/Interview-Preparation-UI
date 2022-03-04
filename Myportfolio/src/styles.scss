@@ -23,8 +23,8 @@ $mobile-small: 300px;
 // }
 
 .magentaAndRedOrange {
-  background-color: #500472;
-  color: #79cbb8;
+  background-color: #500472 !important;
+  color: #79cbb8 !important;
 }
 
 .magentaAndRedOrangeIcon {
@@ -75,9 +75,15 @@ $mobile-small: 300px;
   color: #500472;
 }
 
+.magentaAndRedOrangecardBtn {
+  background-color: #79cbb8 !important;
+  color: #500472 !important;
+  border: 1px solid #79cbb8 !important;
+}
+
 .indigoPink {
-  background-color: #3f51b5;
-  color: #fff;
+  background-color: #3f51b5 !important;
+  color: #fff !important;
 }
 
 .indigoPinkTitle {
@@ -118,9 +124,15 @@ $mobile-small: 300px;
   color: #3f51b5;
 }
 
+.indigoPinkcardBtn {
+  background-color: #fff !important;
+  color: #3f51b5 !important;
+  border: 1px solid #fff !important;
+}
+
 .pinkBluegrey {
-  background-color: #05386b;
-  color: #5cdb95;
+  background-color: #05386b !important;
+  color: #5cdb95 !important;
 }
 
 .pinkBluegreyIcon {
@@ -164,9 +176,15 @@ $mobile-small: 300px;
   color: #05386b;
 }
 
+.pinkBluegreycardBtn {
+  background-color: #5cdb95 !important;
+  color: #05386b !important;
+  border: 1px solid #5cdb95 !important;
+}
+
 .RedAndLively {
-  background-color: #5d001e;
-  color: #e3e2df;
+  background-color: #5d001e !important;
+  color: #e3e2df !important;
 }
 
 .RedAndLivelyIcon {
@@ -208,4 +226,10 @@ $mobile-small: 300px;
 
 .RedAndLivelyshareButton {
   color: #5d001e;
+}
+
+.RedAndLivelycardBtn {
+  background-color: #e3e2df !important;
+  color: #5d001e !important;
+  border: 1px solid #e3e2df !important;
 }

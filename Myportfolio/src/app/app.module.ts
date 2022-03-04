@@ -19,6 +19,10 @@ import { SafePipe } from './pipes/safe.pipe';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { Java8Component } from './components/interview-content/java8/java8.component';
+import { FlipCardComponent } from './components/flip-card/flip-card.component';
+import { FlipCardFrontComponent } from './components/flip-card/flip-card-front/flip-card-front.component';
+import { FlipCardBackComponent } from './components/flip-card/flip-card-back/flip-card-back.component';
+import { BackgroundCSSDirective } from './directives/background-css.directive';
 
 @NgModule({
   declarations: [
@@ -32,6 +36,10 @@ import { Java8Component } from './components/interview-content/java8/java8.compo
     AutoplayDirective,
     SafePipe,
     Java8Component,
+    FlipCardComponent,
+    FlipCardFrontComponent,
+    FlipCardBackComponent,
+    BackgroundCSSDirective,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +53,7 @@ import { Java8Component } from './components/interview-content/java8/java8.compo
     MatIconModule,
     MatDialogModule 
   ],
+  exports:[BackgroundCSSDirective],
   providers: [],
   bootstrap: [AppComponent],
 })

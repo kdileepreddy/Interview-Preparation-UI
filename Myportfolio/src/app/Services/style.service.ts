@@ -19,6 +19,7 @@ export class StyleService {
       menuitem: 'magentaAndRedOrangeMenuItem',
       likebutton: 'magentaAndRedOrangelikeButton',
       sharebutton: 'magentaAndRedOrangeshareButton',
+      cardbutton: 'magentaAndRedOrangecardBtn'
     },
 
     indigoPink: {
@@ -33,6 +34,7 @@ export class StyleService {
       menuitem: 'indigoPinkMenuItem',
       likebutton: 'indigoPinklikeButton',
       sharebutton: 'indigoPinkshareButton',
+      cardbutton: 'indigoPinkcardBtn'
     },
     pinkBluegrey: {
       title: 'pinkBluegreyTitle',
@@ -47,6 +49,7 @@ export class StyleService {
       menuitem: 'pinkBluegreyMenuItem',
       likebutton: 'pinkBluegreylikeButton',
       sharebutton: 'pinkBluegreyshareButton',
+      cardbutton: 'pinkBluegreycardBtn'
     },
     RedAndLively: {
       title: 'RedAndLivelyTitle',
@@ -61,6 +64,7 @@ export class StyleService {
       menuitem: 'RedAndLivelyMenuItem',
       likebutton: 'RedAndLivelylikeButton',
       sharebutton: 'RedAndLivelyshareButton',
+      cardbutton: 'RedAndLivelycardBtn'
     },
   };
 

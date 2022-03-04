@@ -14,7 +14,6 @@
   transform-style: preserve-3d;
   height: auto;
   transition: all 0.5s ease-out;
-  background: white;
   border: none;
 }
 
@@ -24,6 +23,14 @@
   height: 100%;
   width: 100%;
   border: none;
+}
+
+.card-block {
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .card-flip .front {
@@ -42,7 +49,7 @@
 }
 
 .card-container {
-  perspective: 1000px;
+  perspective: 800px;
 }
 
 .cardBackground {
@@ -75,6 +82,7 @@
 }
 .card-body {
   // min-height: 200px;
+  position: absolute;
 }
 .card-footer {
   text-align: right;
