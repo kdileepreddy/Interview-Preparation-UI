@@ -5,10 +5,20 @@
         <div class="col-md-6">
             <flip-card [Card]="'left'">
                 <flip-card-front>
-                    <h2>This is card front</h2>
+                    <div class="card-title">
+                        <h2>Streams</h2>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>  
                 </flip-card-front>
                 <flip-card-back>
-                    <h2>This is card back</h2>
+                    <div class="card-title">
+                        <h2>Streams</h2>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">this is back.</p>
+                    </div> 
                 </flip-card-back>
             </flip-card>
             <!-- <div class="card w-100 leftContent card-flip">
@@ -36,7 +46,7 @@
             </div> -->
         </div>
         <div class="col-md-6">
-            <flip-card>
+            <flip-card [Card]="'right'">
                 <flip-card-front>
                     <h2>This is front</h2>
                 </flip-card-front>

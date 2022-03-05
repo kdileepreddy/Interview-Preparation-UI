@@ -4,86 +4,32 @@
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
+:root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+  
+  --fw-normal: 400;
+  --fw-bold: 700;
+  
+  --clr: #b7c9e5;
+}
+
 .card-title {
-  padding: 0.6rem;
+  padding: 0.3rem;
+  // transform:translateZ(9rem) perspective(200px);
+  // margin-bottom: 0;
+  
 }
 
-.card-flip {
-  position: relative;
-  width: 100%;
-  transform-style: preserve-3d;
-  height: auto;
-  transition: all 0.5s ease-out;
-  border: none;
-}
-
-.card-flip div {
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  height: 100%;
-  width: 100%;
-  border: none;
-}
-
-.card-block {
-  width: 100%;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.card-flip .front {
-  position: relative;
-  z-index: 1;
-}
-
-.card-flip .back {
-  position: relative;
-  z-index: 0;
-  transform: rotateY(-180deg);
-}
-
-.card-container:hover .card-flip {
-  transform: rotateY(180deg);
-}
-
-.card-container {
-  perspective: 800px;
-}
-
-.cardBackground {
-  background: linear-gradient(to right, #500472 50%, white 50%) center !important;
-  color: #79cbb8;
-}
-.flexrow {
-  // max-width: 64rem;
-  display: flex;
-  flex-direction: row;
-  // background-color: #500472;
-  // color: #79cbb8;
-  // background: linear-gradient(to right, #9e08e4 50%, white 50%);
-}
-.leftContent {
-  // padding-right: 0;
-  //  max-width:50%;
-  background-color: #500472 !important;
-  color: #79cbb8;
-  min-height: 450px;
-  border-radius: 0.35rem 0 0 0.35rem;
-}
-.rightContent {
-  // padding-left: 0;
-  // background-color: #fff;
-  // border-color:#500472;
-  // max-width:50%;
-  min-height: 450px;
-  border-radius: 0 0.35rem 0.35rem 0;
-}
 .card-body {
   // min-height: 200px;
   position: absolute;
+  flex: 1 1 auto;
+  padding: 0 1rem;
+  
 }
+
 .card-footer {
   text-align: right;
 }

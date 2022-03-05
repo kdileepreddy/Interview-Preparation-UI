@@ -1,4 +1,5 @@
 import {
+  ChangeDetectorRef,
   Component,
   ElementRef,
   Input,
@@ -22,14 +23,16 @@ export class FlipCardComponent implements OnInit {
   constructor(
     private renderer: Renderer2,
     private el: ElementRef,
-    private styleservice: StyleService
+    private styleservice: StyleService,
+    private cd:ChangeDetectorRef
   ) {}
 
   ngOnInit() {}
 
   ngAfterViewInit() {
-    if (this.Card == 'left') {
+   
       this.styleservice.styleData.subscribe((data) => {
+        if (this.Card == 'left') {
         if (this.styleservice.defaultTheme != data) {
           this.renderer.removeClass(
             this.cardCSS.nativeElement,
@@ -39,13 +42,15 @@ export class FlipCardComponent implements OnInit {
         this.renderer.addClass(this.cardCSS.nativeElement, data);
         this.btnColor = this.styleservice.themeJson[data].cardbutton;
         this.rightBtnColor = data;
+        this.cd.detectChanges();
+        }
+        else if (this.Card == 'right')
+        {this.btnColor = data;
         this.styleservice.defaultTheme = data;
+        this.cd.detectChanges();
+        }
       });
-    } else {
-      this.styleservice.styleData.subscribe((data) => {
-        this.btnColor = data;
-      });
-    }
+  
   }
   toggle() {
     this.toggleProperty = !this.toggleProperty;
