@@ -11,6 +11,7 @@ public toggleColor:boolean = true;
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
  toggleTheme():void{

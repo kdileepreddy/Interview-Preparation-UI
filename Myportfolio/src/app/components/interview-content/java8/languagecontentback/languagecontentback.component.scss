@@ -15,3 +15,34 @@
     // margin-bottom: 0;
     margin-bottom: 0;
   }
+  .title{
+      font-weight: 500;
+      margin-bottom: 0;
+  }
+  .card-text{
+  font-size:14px;
+  display:flex;
+  justify-content: center;
+  word-wrap: break-word;
+  }
+  .scroll{
+    max-height: 55vh;
+    overflow-y: auto;
+  }
+//   ::-webkit-scrollbar { 
+//     display: none;  /* Safari and Chrome */
+// }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #500472; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #79cbb8; 
+}
