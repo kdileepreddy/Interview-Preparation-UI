@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { DataService } from 'src/app/Services/data.service';
 
 @Component({
@@ -9,7 +9,8 @@ import { DataService } from 'src/app/Services/data.service';
 export class Java8Component implements OnInit {
 
   public flip:boolean = false;
-  constructor(private dataservice: DataService) { }
+  constructor(private dataservice: DataService, private renderer: Renderer2,
+    private el: ElementRef) { }
 
   ngOnInit(): void {
     this.dataservice.pagedata$.next('Java 8');
@@ -18,4 +19,5 @@ export class Java8Component implements OnInit {
   cardFlip(): void{
     this.flip = !this.flip;
   }
+ 
 }

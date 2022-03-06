@@ -23,6 +23,14 @@ import { FlipCardComponent } from './components/flip-card/flip-card.component';
 import { FlipCardFrontComponent } from './components/flip-card/flip-card-front/flip-card-front.component';
 import { FlipCardBackComponent } from './components/flip-card/flip-card-back/flip-card-back.component';
 import { BackgroundCSSDirective } from './directives/background-css.directive';
+import { MatDividerModule } from '@angular/material/divider';
+import { JavacompilerComponent } from './components/interview-content/java8/javacompiler/javacompiler.component';
+import { JavacodeComponent } from './components/interview-content/java8/javacode/javacode.component';
+import { LanguagecontentComponent } from './components/interview-content/java8/languagecontent/languagecontent.component';
+import { LanguagecontentbackComponent } from './components/interview-content/java8/languagecontentback/languagecontentback.component';
+import { CodecontentComponent } from './components/interview-content/java8/codecontent/codecontent.component';
+import { CodecontentbackComponent } from './components/interview-content/java8/codecontentback/codecontentback.component';
+import { InterviewquestionsComponent } from './components/interview-content/interviewquestions/interviewquestions.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +48,13 @@ import { BackgroundCSSDirective } from './directives/background-css.directive';
     FlipCardFrontComponent,
     FlipCardBackComponent,
     BackgroundCSSDirective,
+    JavacompilerComponent,
+    JavacodeComponent,
+    LanguagecontentComponent,
+    LanguagecontentbackComponent,
+    CodecontentComponent,
+    CodecontentbackComponent,
+    InterviewquestionsComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +66,9 @@ import { BackgroundCSSDirective } from './directives/background-css.directive';
     SharedModule,
     YouTubePlayerModule,
     MatIconModule,
-    MatDialogModule 
+    MatDialogModule ,
+    MatDividerModule
+
   ],
   exports:[BackgroundCSSDirective],
   providers: [],

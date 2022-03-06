@@ -16,7 +16,6 @@ import { StyleService } from 'src/app/Services/style.service';
 })
 export class FlipCardComponent implements OnInit {
   public btnColor: any;
-  public rightBtnColor: any;
   toggleProperty = false;
   @Input() Card: any = '';
   @ViewChild('cardCSS') cardCSS!: ElementRef;
@@ -40,7 +39,6 @@ export class FlipCardComponent implements OnInit {
         }
         this.renderer.addClass(this.cardCSS.nativeElement, data);
         this.btnColor = this.styleservice.themeJson[data].cardbutton;
-        this.rightBtnColor = data;
         if (this.toggleProperty == false) {
           this.renderer.setStyle(
             this.cardCSS.nativeElement,

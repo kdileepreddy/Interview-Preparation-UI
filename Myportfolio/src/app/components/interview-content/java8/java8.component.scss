@@ -15,19 +15,16 @@
   --clr: #b7c9e5;
 }
 
-.card-title {
-  padding: 0.3rem;
-  // transform:translateZ(9rem) perspective(200px);
-  // margin-bottom: 0;
-}
 
-.card-body {
-  // min-height: 200px;
-  position: absolute;
-  flex: 1 1 auto;
-  padding: 0 1rem;
-}
+
+
 
 .card-footer {
   text-align: right;
+}
+
+
+
+#frame{
+  width: 30rem;
 }

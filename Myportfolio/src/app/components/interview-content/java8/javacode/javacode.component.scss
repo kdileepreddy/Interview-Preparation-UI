@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined");
+.code-block {
+    display: flex;
+    flex-direction: row;
+    // margin-bottom: 10px;
+    height:66.5vh;
+    width:100%;
+    
+}
+.code-container{
+    width:100%;
+    height:66.5vh;
+    // border:3px solid black;
+}
+.code-gutter {
+    flex-flow: column;
+    width: 2vw;
+    right:0;
+}
+.editor-buttons {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    padding-top: 6px;
+    top: 0;
+    width: 2vw;
+    z-index: 1;
+    position: sticky;
+    position: -webkit-sticky;
+}
+.editor-buttons-container {
+    bottom: 0;
+    right: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 120px;
+    width: 2vw;
+}
+.editor-buttons-div{
+    display: flex;
+    flex-flow: column;
+    
+}
+.iconSpacing{
+    padding-bottom: 2vh;
+}
+.dark-mode{
+    background-color: #202124 !important;
+    color:#78D9EC;
+}
+.light-mode{
+    background-color: #f1f3f4 !important;
+}
+.card-text{
+    margin-top: 2vh;
+}

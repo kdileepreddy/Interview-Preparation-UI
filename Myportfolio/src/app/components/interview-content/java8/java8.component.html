@@ -1,74 +1,24 @@
 <div class="container">
-
     <div class="row g-0">
-
         <div class="col-md-6">
             <flip-card [Card]="'left'">
                 <flip-card-front>
-                    <div class="card-title">
-                        <h2>Streams</h2>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
+                    <languagecontent></languagecontent>
                 </flip-card-front>
                 <flip-card-back>
-                    <div class="card-title">
-                        <h2>Streams</h2>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">this is back.</p>
-                    </div>
+                    <languagecontentback></languagecontentback>
                 </flip-card-back>
             </flip-card>
-            <!-- <div class="card w-100 leftContent card-flip">
-                <div class="front card-block">
-                    <div class="card-title">
-                        <h2>Streams</h2>
-                    </div>
-                    <div class="card-body">
-                        This is front text within a card body.
-                    </div>
-                    <div >
-                        <button class="flipButton" class="btn btn-primary">Flip</button>
-                    </div>
-                </div>
-                <div class="back card-block">
-                    <div class="card-body">
-                        This is back text within a card body.
-                    </div>
-                    <div class="card-footer">
-                        <button class="flipButton" class="btn btn-primary">Flip</button>
-                    </div>
-                </div>
-
-
-            </div> -->
         </div>
         <div class="col-md-6">
             <flip-card [Card]="'right'">
                 <flip-card-front>
-                    <h2>This is front</h2>
+                    <codecontent></codecontent>
                 </flip-card-front>
                 <flip-card-back>
-                    <h2>This is back</h2>
+                    <codecontentback></codecontentback>
                 </flip-card-back>
             </flip-card>
-            <!-- <div class="card w-100 rightContent card-flip">
-        
-                <div class="front card-block">
-
-                    <div class="card-body">
-                        front
-                    </div>
-                </div>
-                <div class="back card-block">
-                    <div class="card-body">
-                        This is some text within a card body.
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 </div>

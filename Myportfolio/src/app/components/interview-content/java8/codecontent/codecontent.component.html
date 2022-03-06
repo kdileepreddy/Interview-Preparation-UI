@@ -1,0 +1,17 @@
+<div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="code" [routerLinkActive]="['active']"
+                id="item1">Code</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="compiler" [routerLinkActive]="['active']"
+                id="item2">Compiler</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="stackoverflow" [routerLinkActive]="['active']"
+                id="item3">Interview Questions</a>
+        </li>
+    </ul>
+</div>
+<router-outlet></router-outlet>
