@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'languagecontent',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LanguagecontentComponent implements OnInit {
 
+  @Input() content: any;
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

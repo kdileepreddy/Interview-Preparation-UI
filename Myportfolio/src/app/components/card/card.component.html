@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row g-0" *ngFor="let language of languageContentJson[languageSelected]">
+        <div class="col-md-6">
+            <flip-card [Card]="'left'">
+                <flip-card-front>
+                    <languagecontent [content]="language"></languagecontent>
+                </flip-card-front>
+                <flip-card-back>
+                    <languagecontentback [content]="language"></languagecontentback>
+                </flip-card-back>
+            </flip-card>
+        </div>
+        <div class="col-md-6">
+            <flip-card [Card]="'right'">
+                <flip-card-front>
+                    <codecontent></codecontent>
+                </flip-card-front>
+                <flip-card-back>
+                    <codecontentback></codecontentback>
+                </flip-card-back>
+            </flip-card>
+        </div>
+        <div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+</div>
+

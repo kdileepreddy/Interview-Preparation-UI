@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'languagecontentback',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./languagecontentback.component.scss']
 })
 export class LanguagecontentbackComponent implements OnInit {
-
+@Input() content:any;
   constructor() { }
 
   ngOnInit(): void {

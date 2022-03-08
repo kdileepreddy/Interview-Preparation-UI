@@ -31,6 +31,7 @@ import { LanguagecontentbackComponent } from './components/interview-content/jav
 import { CodecontentComponent } from './components/interview-content/java8/codecontent/codecontent.component';
 import { CodecontentbackComponent } from './components/interview-content/java8/codecontentback/codecontentback.component';
 import { InterviewquestionsComponent } from './components/interview-content/interviewquestions/interviewquestions.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { InterviewquestionsComponent } from './components/interview-content/inte
     CodecontentComponent,
     CodecontentbackComponent,
     InterviewquestionsComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
