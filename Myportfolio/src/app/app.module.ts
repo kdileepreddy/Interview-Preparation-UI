@@ -32,6 +32,8 @@ import { CodecontentComponent } from './components/interview-content/java8/codec
 import { CodecontentbackComponent } from './components/interview-content/java8/codecontentback/codecontentback.component';
 import { InterviewquestionsComponent } from './components/interview-content/interviewquestions/interviewquestions.component';
 import { CardComponent } from './components/card/card.component';
+import { RouteReuseStrategy } from '@angular/router';
+import { CustomRouteReuseStrategy } from './providers/CustomRouteReuseStrategy';
 
 @NgModule({
   declarations: [
@@ -73,7 +75,7 @@ import { CardComponent } from './components/card/card.component';
 
   ],
   exports:[BackgroundCSSDirective],
-  providers: [],
+  providers: [{provide: RouteReuseStrategy, useClass: CustomRouteReuseStrategy}],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
