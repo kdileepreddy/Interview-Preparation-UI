@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row g-0" *ngFor="let language of languageContentJson[languageSelected]">
+    <div class="row g-0" *ngFor="let language of languageContent">
         <div class="col-md-6">
             <flip-card [Card]="'left'">
                 <flip-card-front>
@@ -13,7 +13,7 @@
         <div class="col-md-6">
             <flip-card [Card]="'right'">
                 <flip-card-front>
-                    <codecontent></codecontent>
+                    <codecontent [codelanguage]="languageSelected"></codecontent>
                 </flip-card-front>
                 <flip-card-back>
                     <codecontentback></codecontentback>

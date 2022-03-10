@@ -1,5 +1,6 @@
 <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs">
+        <ng-container *ngIf="codelanguage=='java8'">
         <li class="nav-item">
             <a class="nav-link" routerLink="code" [routerLinkActive]="['active']"
                 id="item1">Code</a>
@@ -12,6 +13,25 @@
             <a class="nav-link" routerLink="interviewquestions" [routerLinkActive]="['active']"
                 id="item3">Interview Questions</a>
         </li>
+    </ng-container>
+    <ng-container *ngIf="codelanguage=='angular'">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="code" [routerLinkActive]="['active']"
+                id="item1">HTML5</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="compiler" [routerLinkActive]="['active']"
+                id="item2">SCSS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="compiler" [routerLinkActive]="['active']"
+                id="item2">Typescript</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="interviewquestions" [routerLinkActive]="['active']"
+                id="item3">Interview Questions</a>
+        </li>
+    </ng-container>
     </ul>
 </div>
 <router-outlet></router-outlet>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'codecontent',
@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./codecontent.component.scss']
 })
 export class CodecontentComponent implements OnInit {
-
+@Input() codelanguage:any;
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.codelanguage);
   }
 
 }

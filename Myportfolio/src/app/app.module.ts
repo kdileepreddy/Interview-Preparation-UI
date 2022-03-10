@@ -34,6 +34,10 @@ import { InterviewquestionsComponent } from './components/interview-content/inte
 import { CardComponent } from './components/card/card.component';
 import { RouteReuseStrategy } from '@angular/router';
 import { CustomRouteReuseStrategy } from './providers/CustomRouteReuseStrategy';
+import { Html5Component } from './components/interview-content/angular/html5/html5.component';
+import { ScssComponent } from './components/interview-content/angular/scss/scss.component';
+import { TypescriptComponent } from './components/interview-content/angular/typescript/typescript.component';
+import { AngularcompilerComponent } from './components/interview-content/angular/angularcompiler/angularcompiler.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +63,10 @@ import { CustomRouteReuseStrategy } from './providers/CustomRouteReuseStrategy';
     CodecontentbackComponent,
     InterviewquestionsComponent,
     CardComponent,
+    Html5Component,
+    ScssComponent,
+    TypescriptComponent,
+    AngularcompilerComponent,
   ],
   imports: [
     BrowserModule,
