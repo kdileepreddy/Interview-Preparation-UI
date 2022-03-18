@@ -11,6 +11,10 @@ export class AngularComponent implements OnInit {
   constructor(private dataservice: DataService) {}
 
   ngOnInit(): void {
+    this.dataservice.getAngularContent().subscribe((data: string) => {
+      console.log("heelo");
+      console.log(data);
+    })
     this.dataservice.pagedata$.next('Angular');
     this.languageContentJson = [
       {

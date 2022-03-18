@@ -38,7 +38,7 @@ import { Html5Component } from './components/interview-content/angular/html5/htm
 import { ScssComponent } from './components/interview-content/angular/scss/scss.component';
 import { TypescriptComponent } from './components/interview-content/angular/typescript/typescript.component';
 import { AngularcompilerComponent } from './components/interview-content/angular/angularcompiler/angularcompiler.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -79,7 +79,8 @@ import { AngularcompilerComponent } from './components/interview-content/angular
     YouTubePlayerModule,
     MatIconModule,
     MatDialogModule ,
-    MatDividerModule
+    MatDividerModule,
+    HttpClientModule
 
   ],
   exports:[BackgroundCSSDirective],
