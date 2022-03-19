@@ -1,14 +1,14 @@
-<mat-sidenav-container class="example-container">
+<mat-sidenav-container class="example-container" fullscreen>
 
-  <mat-sidenav mode="side" [opened]="sideBarOpen" [class]="sideNavColor">
+  <mat-sidenav id="sidenav" mode="side"  [class]="sideNavColor" [class.menu-open]="sideBarOpen" [class.menu-close]="!sideBarOpen" opened>
     
       <app-sidenav-header></app-sidenav-header>
       <app-sidenav-content></app-sidenav-content>
     
   </mat-sidenav>
 
-  <mat-sidenav-content>
-    <div class="header" [ngClass]="sideBarOpen?'content-width':'full-content-width'">
+  <mat-sidenav-content  [ngStyle]="{ 'margin-left.vw': contentMargin }">
+    <div class="header">
       <app-header (toggleSideBarForMe)="sideBarToggler($event)"></app-header>
     </div>
     <div  [ngClass]="content?content+' contentCss':''">

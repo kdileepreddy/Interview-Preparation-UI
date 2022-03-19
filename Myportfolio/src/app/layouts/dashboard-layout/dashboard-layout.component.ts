@@ -1,5 +1,6 @@
 import { BooleanInput } from '@angular/cdk/coercion';
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/Services/data.service';
 import { StyleService } from 'src/app/Services/style.service';
 
 @Component({
@@ -8,11 +9,12 @@ import { StyleService } from 'src/app/Services/style.service';
   styleUrls: ['./dashboard-layout.component.scss'],
 })
 export class DashboardLayoutComponent implements OnInit {
-  sideBarOpen: BooleanInput = true;
+  sideBarOpen: boolean = true;
   public sideNavColor: any;
   public content: any;
   public contentCss: any;
-  constructor(private styleservice: StyleService) {}
+  contentMargin: number = 17;
+  constructor(private styleservice: StyleService,private dataservice: DataService) {}
 
   ngOnInit(): void {
     this.styleservice.styleData.subscribe((data) => {
@@ -24,5 +26,12 @@ export class DashboardLayoutComponent implements OnInit {
 
   sideBarToggler(event: any) {
     this.sideBarOpen = !this.sideBarOpen;
+    if(!this.sideBarOpen) {
+      this.contentMargin = 5;
+      this.dataservice.carddata$.next(3);
+    } else {
+      this.contentMargin = 17;
+      this.dataservice.carddata$.next(2);
+    }
   }
 }

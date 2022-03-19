@@ -13,6 +13,9 @@
     animation-iteration-count: 1;
     
 }
+mat-toolbar-row{
+  padding-left:0;
+}
 
 .side-nav-title:hover{
     animation-name: rubberBand;

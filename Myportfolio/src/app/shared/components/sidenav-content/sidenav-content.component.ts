@@ -20,7 +20,7 @@ export class SidenavContentComponent implements OnInit {
   public MatExpansionPanel!: string;
   public themeNavLink: any;
   public themeActiveLink: any;
-  @ViewChild('matExpansionPanel') matExpansionPanel!: ElementRef;
+  public opened:boolean= false;
 
   constructor(
     private styleservice: StyleService,
@@ -49,25 +49,19 @@ export class SidenavContentComponent implements OnInit {
       route: 'dashboard',
     },
     {
-      displayName: 'Interview Content',
-      iconName: 'source',
-      children: [
-        {
-          displayName: 'Angular',
-          iconName: 'font_download',
-          route: 'angularContent',
-        },
-        {
-          displayName: 'Java 8',
-          iconName: 'code',
-          route: 'Java8',
-        },
-        {
-          displayName: 'Spring Boot',
-          iconName: 'code',
-          route: 'springboot-content',
-        },
-      ],
+      displayName: 'Angular',
+      iconName: 'font_download',
+      route: 'angularContent',
+    },
+    {
+      displayName: 'Java 8',
+      iconName: 'code',
+      route: 'Java8',
+    },
+    {
+      displayName: 'Spring Boot',
+      iconName: 'code',
+      route: 'springboot-content',
     },
     {
       displayName: 'My Applications',
@@ -75,4 +69,7 @@ export class SidenavContentComponent implements OnInit {
       route: 'myApplications',
     },
   ];
+  togglePanel():void{
+    this.opened=true;
+  }
 }
