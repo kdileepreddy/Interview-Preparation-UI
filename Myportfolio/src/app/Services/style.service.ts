@@ -66,10 +66,26 @@ export class StyleService {
       sharebutton: 'RedAndLivelyshareButton',
       cardbutton: 'RedAndLivelycardBtn',
     },
+    OrangeAndCream: {
+      title: 'OrangeAndCreamTitle',
+      header: 'OrangeAndCreamheader',
+      headingColor: '#673ab7',
+      content: 'OrangeAndCreamcontent',
+      button: 'OrangeAndCream-button',
+      search: 'OrangeAndCreamSearch',
+      iconColor: 'OrangeAndCreamIcon',
+      navlink: 'OrangeAndCream-nav-link',
+      activelink: 'OrangeAndCream-active-link',
+      menuitem: 'OrangeAndCreamMenuItem',
+      likebutton: 'OrangeAndCreamlikeButton',
+      sharebutton: 'OrangeAndCreamshareButton',
+      cardbutton: 'OrangeAndCreamcardBtn',
+    },
+    
   };
 
   public styleData$: BehaviorSubject<string> = new BehaviorSubject<string>(
-    'magentaAndRedOrange'
+    'OrangeAndCream'
   );
   public styleData: Observable<string> = this.styleData$.asObservable();
   public defaultTheme: any = 'magentaAndRedOrange';

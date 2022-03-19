@@ -22,14 +22,14 @@
 }
 
 /* Track */
-::-webkit-scrollbar-track {
-  background: #500472; 
-}
+
+  ::-webkit-scrollbar-thumb {
+    background: #ece9e2; 
+  }
+
  
 /* Handle */
-::-webkit-scrollbar-thumb {
-  background: #79cbb8; 
-}
+
 
 
   .card-title {

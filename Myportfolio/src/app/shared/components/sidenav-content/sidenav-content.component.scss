@@ -66,3 +66,12 @@
     color: #5d001e;
   }
 }
+
+.OrangeAndCream-nav-link {
+  color: #ffffff;
+
+  &.OrangeAndCream-active-link {
+    background-color: #ece9e2;
+    color: #ee4935;
+  }
+}
