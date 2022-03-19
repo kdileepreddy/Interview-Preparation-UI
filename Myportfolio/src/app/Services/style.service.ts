@@ -85,7 +85,7 @@ export class StyleService {
   };
 
   public styleData$: BehaviorSubject<string> = new BehaviorSubject<string>(
-    'OrangeAndCream'
+    'magentaAndRedOrange'
   );
   public styleData: Observable<string> = this.styleData$.asObservable();
   public defaultTheme: any = 'magentaAndRedOrange';

@@ -1,8 +1,11 @@
+
+
 <div class="content-loading" *ngIf="loading; else loaded">
 
-  <img src="/assets/loading.gif">
-
+  <!-- <img src="/assets/loading.gif"> -->
+<h1 style="font-size: 7vw !important;" data-text="Loading...">Loading...</h1>
 </div>
+
 <ng-template #loaded>
   <router-outlet></router-outlet>
 </ng-template>
