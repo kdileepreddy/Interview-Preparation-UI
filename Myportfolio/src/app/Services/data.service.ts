@@ -7,7 +7,7 @@ import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 })
 export class DataService {
   public pagedata$: BehaviorSubject<string> = new BehaviorSubject<string>(
-    'Interesting Facts'
+    'Profile'
   );
   public pagedata: Observable<string> = this.pagedata$.asObservable();
   public carddata$: Subject<number> = new Subject<number>();

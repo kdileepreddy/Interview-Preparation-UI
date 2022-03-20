@@ -1,6 +1,28 @@
 // .header{
 //     background-color: #500472;
 //   }
+.titleanimation1{
+  animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-name: rubberBand;
+    transition: all 0.3s ease-out;
+}
+.titleanimation7{
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-name: rubberBand;
+}
+// .titleanimation3{
+//   animation-duration: 1s;
+//   animation-fill-mode: both;
+//   animation-iteration-count: infinite;
+//   animation-delay: 9s;
+//   animation-name: rubberBand;
+// }
 .side-nav-title{
     font-weight: 500;
     font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -8,16 +30,15 @@
     line-height: 32px;
     
     letter-spacing: .1rem;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
     
 }
+
+
 mat-toolbar-row{
   padding-left:0;
 }
 
-.side-nav-title:hover{
+.titleanimation3:hover{
     animation-name: rubberBand;
 }
 
