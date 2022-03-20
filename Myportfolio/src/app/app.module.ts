@@ -39,6 +39,7 @@ import { ScssComponent } from './components/interview-content/angular/scss/scss.
 import { TypescriptComponent } from './components/interview-content/angular/typescript/typescript.component';
 import { AngularcompilerComponent } from './components/interview-content/angular/angularcompiler/angularcompiler.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProfileComponent } from './components/profile/profile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,6 +68,7 @@ import { HttpClientModule } from '@angular/common/http';
     ScssComponent,
     TypescriptComponent,
     AngularcompilerComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ import { JavacodeComponent } from './components/interview-content/java8/javacode
 import { JavacompilerComponent } from './components/interview-content/java8/javacompiler/javacompiler.component';
 import { SpringBootComponent } from './components/interview-content/spring-boot/spring-boot.component';
 import { MyApplicationsComponent } from './components/my-applications/my-applications.component';
+import { ProfileComponent } from './components/profile/profile.component';
 import { DashboardLayoutComponent } from './layouts/dashboard-layout/dashboard-layout.component';
 
 const routes: Routes = [
@@ -18,6 +19,10 @@ const routes: Routes = [
     children: [
       {
         path: '',
+        component: ProfileComponent,
+      },
+      {
+        path: 'facts',
         component: InterestingFactsComponent,
       },
       {

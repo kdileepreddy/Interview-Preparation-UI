@@ -41,7 +41,7 @@ export class SidenavContentComponent implements OnInit {
     {
       displayName: 'Interesting Facts',
       iconName: 'fact_check',
-      route: '',
+      route: 'facts',
     },
     {
       displayName: 'Dashboard',
