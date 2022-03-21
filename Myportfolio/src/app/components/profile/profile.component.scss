@@ -1,7 +1,7 @@
 h1 {
   font-size: 3vw;
   position: relative;
-  color:#500472;
+  color:#fff;
 }
 .linebreak {
   display: inline-block;
@@ -44,16 +44,16 @@ h1 {
 #title p {
   position: absolute;
   white-space: nowrap;
-  color: #79cbb8;
+  color: #385ea7;
   transform: translate(-10%, -10%);
 }
 #title p:nth-child(1) {
   color: transparent;
-  -webkit-text-stroke: 4px #500472;
+  -webkit-text-stroke: 4px #fff;
 }
 #title p:nth-child(2) {
-  color: #79cbb8;
-  -webkit-text-stroke: 1px #500472;
+  color: #385ea7;
+  -webkit-text-stroke: 1px #fff;
   animation: animate 4s ease-in-out infinite;
 }
 @keyframes animate {

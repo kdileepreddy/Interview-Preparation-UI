@@ -86,3 +86,12 @@
     color: #ee4935;
   }
 }
+
+.credColorPalete-nav-link {
+  color: #d9a57c;
+
+  &.credColorPalete-active-link {
+    background-color: #4f4e4c;
+    color: #d9a57c;
+  }
+}

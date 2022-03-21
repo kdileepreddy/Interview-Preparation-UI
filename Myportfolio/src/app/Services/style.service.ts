@@ -20,6 +20,7 @@ export class StyleService {
       likebutton: 'magentaAndRedOrangelikeButton',
       sharebutton: 'magentaAndRedOrangeshareButton',
       cardbutton: 'magentaAndRedOrangecardBtn',
+      divider: 'magentaAndRedOrangecardDivider'
     },
 
     indigoPink: {
@@ -35,6 +36,7 @@ export class StyleService {
       likebutton: 'indigoPinklikeButton',
       sharebutton: 'indigoPinkshareButton',
       cardbutton: 'indigoPinkcardBtn',
+      divider: 'indigoPinkDivider'
     },
     pinkBluegrey: {
       title: 'pinkBluegreyTitle',
@@ -50,6 +52,7 @@ export class StyleService {
       likebutton: 'pinkBluegreylikeButton',
       sharebutton: 'pinkBluegreyshareButton',
       cardbutton: 'pinkBluegreycardBtn',
+      divider: 'pinkBluegreyDivider'
     },
     RedAndLively: {
       title: 'RedAndLivelyTitle',
@@ -65,6 +68,7 @@ export class StyleService {
       likebutton: 'RedAndLivelylikeButton',
       sharebutton: 'RedAndLivelyshareButton',
       cardbutton: 'RedAndLivelycardBtn',
+      divider: 'RedAndLivelyDivider'
     },
     OrangeAndCream: {
       title: 'OrangeAndCreamTitle',
@@ -80,12 +84,29 @@ export class StyleService {
       likebutton: 'OrangeAndCreamlikeButton',
       sharebutton: 'OrangeAndCreamshareButton',
       cardbutton: 'OrangeAndCreamcardBtn',
+      divider: 'OrangeAndCreamDivider'
+    },
+    credColorPalete: {
+      title: 'credColorPaleteTitle',
+      header: 'credColorPaleteheader',
+      headingColor: '#673ab7',
+      content: 'credColorPaletecontent',
+      button: 'credColorPalete-button',
+      search: 'credColorPaleteSearch',
+      iconColor: 'credColorPaleteIcon',
+      navlink: 'credColorPalete-nav-link',
+      activelink: 'credColorPalete-active-link',
+      menuitem: 'credColorPaleteMenuItem',
+      likebutton: 'credColorPaletelikeButton',
+      sharebutton: 'credColorPaleteshareButton',
+      cardbutton: 'credColorPaletecardBtn',
+      divider: 'credColorPaleteDivider'
     },
     
   };
 
   public styleData$: BehaviorSubject<string> = new BehaviorSubject<string>(
-    'magentaAndRedOrange'
+    'credColorPalete'
   );
   public styleData: Observable<string> = this.styleData$.asObservable();
   public defaultTheme: any = 'magentaAndRedOrange';

@@ -16,6 +16,7 @@ export class HeaderComponent implements OnInit {
   public search: any;
   public accountButton: any;
   public menuItem: any;
+  public divider:any;
   searchFormControl = new FormControl();
   constructor(
     private dataservice: DataService,
@@ -32,6 +33,7 @@ export class HeaderComponent implements OnInit {
       this.accountButton = this.styleservice.themeJson[data].button;
       this.search = this.styleservice.themeJson[data].search;
       this.menuItem = this.styleservice.themeJson[data].menuitem;
+      this.divider = this.styleservice.themeJson[data].divider;
     });
   }
   toggleSideBar() {

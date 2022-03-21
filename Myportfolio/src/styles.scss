@@ -12,6 +12,39 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+:root {
+  --dark-background1: #202325;
+  --dark-cell-background2: #202427;
+  --dark-background3: #1a1b1d;
+  --dark-background4: #1c2023;
+  --dark-font1: #cfb198;
+  --dark-font2: #dcc7b4;
+  --dark-font3: #dfc2ab;
+  --dark-font4: #bda998;
+  --dark-font5: #d9a57c;
+  --light-font1: #80766e;
+  --light-font2: #837c72;
+  --card-background1: #4c9883;
+  --card-background2:#e3af63;
+  --card-background3: #4f4e4c;
+  --card-background4: #d5a75a;
+  --card-background5: #f6ff8a;
+  --card-background6: #ebf8de;
+  --card-background7:#eacbd1;
+  --card-background8:#cc95bd;
+  --text-background1: #d7dcea;
+  --text-background2: #e3c2a6;
+  --text-transparent-background: #86878b;
+  --button-background1: #385ea7;
+  --button-background2:#1b1c1e;
+  
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  --clr: #b7c9e5;
+}
+
 $desktop: 960px;
 $tablet: 768px;
 $mobile-large: 640px;
@@ -84,6 +117,11 @@ $mobile-small: 300px;
   border: 1px solid #79cbb8 !important;
 }
 
+.magentaAndRedOrangeDivider {
+  background-color: #500472;
+  height: 2px;
+}
+
 .indigoPink {
   background-color: #3f51b5 !important;
   color: #fff !important;
@@ -131,6 +169,11 @@ $mobile-small: 300px;
   background-color: #fff !important;
   color: #3f51b5 !important;
   border: 1px solid #fff !important;
+}
+
+.indigoPinkDivider {
+  background-color: #500472;
+  height: 2px;
 }
 
 .pinkBluegrey {
@@ -183,6 +226,10 @@ $mobile-small: 300px;
   background-color: #5cdb95 !important;
   color: #05386b !important;
   border: 1px solid #5cdb95 !important;
+}
+.pinkBluegreyDivider {
+  background-color: #500472;
+  height: 2px;
 }
 
 .RedAndLively {
@@ -237,6 +284,11 @@ $mobile-small: 300px;
   border: 1px solid #e3e2df !important;
 }
 
+.RedAndLivelyDivider {
+  background-color: #500472;
+  height: 2px;
+}
+
 .OrangeAndCream {
   background-color: #ee4935 !important;
   color: #ffffff !important;
@@ -288,4 +340,65 @@ $mobile-small: 300px;
   background-color: #ece9e2 !important;
   color: #ee4935 !important;
   border: 1px solid #ece9e2 !important;
+}
+.OrangeAndCreamDivider {
+  background-color: #500472;
+  height: 2px;
+}
+
+.credColorPalete {
+  background-color: #1c2023 !important;
+  color: #fff !important;
+}
+
+.credColorPaleteIcon {
+  color: #d9a57c;
+}
+
+.credColorPaleteTitle {
+  color: #d9a57c;
+}
+
+.credColorPaleteheader {
+  background-color: #202427;
+  color: #d9a57c;
+}
+
+.credColorPaletecontent {
+  background-color: #202427;
+}
+
+.credColorPalete-button {
+  background-color: #1c2023;
+  color: #d9a57c;
+}
+
+.credColorPaleteSearch {
+  background-color: #fff;
+}
+
+.credColorPaleteMenuItem {
+  background-color: #202427;
+  color: #1c2023;
+  overflow-x: hidden !important;
+}
+
+.credColorPaletelikeButton {
+  background-color: #1c2023;
+  color: #d9a57c;
+}
+
+.credColorPaleteshareButton {
+  color: #1c2023;
+}
+
+.credColorPaletecardBtn {
+  background-color: #202427 !important;
+  color: #d9a57c !important;
+  border: 1px solid #202427 !important;
+}
+
+.credColorPaleteDivider {
+  background-color: #d9a57c;
+  height: 2px;
 }
