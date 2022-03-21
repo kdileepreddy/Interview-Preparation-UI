@@ -22,6 +22,7 @@
   </div>
   <div *ngIf="selectedValue === 'Theme of the application'">
     <mat-radio-group aria-label="Select an option" class="radio-group" [(ngModel)]="theme">
+      <mat-radio-button [value]="'credColorPalete'">CredColorPalete</mat-radio-button>
       <mat-radio-button [value]="'magentaAndRedOrange'">Magenta and RedOrange</mat-radio-button>
       <mat-radio-button [value]="'indigoPink'">Indigo and pink</mat-radio-button>
       <mat-radio-button [value]="'pinkBluegrey'">Cool and Fresh</mat-radio-button>

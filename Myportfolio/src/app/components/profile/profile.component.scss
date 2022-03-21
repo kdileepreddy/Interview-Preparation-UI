@@ -44,7 +44,7 @@ h1 {
 #title p {
   position: absolute;
   white-space: nowrap;
-  color: #385ea7;
+  color: #1b1c1e;
   transform: translate(-10%, -10%);
 }
 #title p:nth-child(1) {
@@ -52,7 +52,7 @@ h1 {
   -webkit-text-stroke: 4px #fff;
 }
 #title p:nth-child(2) {
-  color: #385ea7;
+  color: #1b1c1e;
   -webkit-text-stroke: 1px #fff;
   animation: animate 4s ease-in-out infinite;
 }
@@ -109,38 +109,38 @@ h1 {
 		-webkit-tap-highlight-color: transparent;
 }
 
-button {
-	width: 150px;
-	height: 50px;
-	cursor: pointer;
-	background: #333;
-	margin: 10px;
-	border: none;
-	border-radius: 10px;
-	box-shadow: -2px -2px 7px #444, 2px 2px 7px #79cbb8, inset 2px 2px 5px #444, inset -2px -2px 5px #222;
-	color: #79cbb8;
-	font-size: 16px;
-}
+// button {
+// 	width: 150px;
+// 	height: 50px;
+// 	cursor: pointer;
+// 	background: #202427;
+// 	margin: 10px;
+// 	border: none;
+// 	border-radius: 10px;
+// 	box-shadow: -2px -2px 7px #1c2023, 2px 2px 7px #d9a57c, inset 2px 2px 5px #1c2023, inset -2px -2px 5px #1c2023;
+// 	color: #d9a57c;
+// 	font-size: 16px;
+// }
 
-button:hover {
-	box-shadow: -2px -2px 7px #444, 2px 2px 7px #222, inset 2px 2px 5px #222, inset -2px -2px 5px #444;
-	font-size: 15px;
-	transition: 500ms;
-}
+// button:hover {
+// 	box-shadow: -2px -2px 7px #444, 2px 2px 7px #222, inset 2px 2px 5px #222, inset -2px -2px 5px #444;
+// 	font-size: 15px;
+// 	transition: 500ms;
+// }
 
-button:focus {
-	outline: none;
-}
+// button:focus {
+// 	outline: none;
+// }
 
-.red:hover {
-	color: #79cbb8;
-	text-shadow: 0px 0px 10px #93f071;
-}
+// .red:hover {
+// 	color: #79cbb8;
+// 	text-shadow: 0px 0px 10px #93f071;
+// }
 
-.green:hover {
-		color: #93f071;
-	text-shadow: 0px 0px 10px #93f071;
-}
+// .green:hover {
+// 		color: #93f071;
+// 	text-shadow: 0px 0px 10px #93f071;
+// }
 
 .container{
   display:flex;
@@ -178,11 +178,11 @@ button:focus {
   // transform: translateY(0px);
   // opacity:1;
 }
-.container .card .content h2{
+.container .card .content h2 mat-icon{
   position: absolute;
-  top:40px;
-  right:30px;
-  font-size: 8em;
+  top:25px;
+  right:110px;
+  font-size: 5em;
   color: rgba(255,255,255,0.05);
   pointer-events: none;
 
@@ -191,5 +191,24 @@ button:focus {
   font-size: 3em;
   color:#fff;
   font-weight: 300;
+}
+
+.card{
+  height:16vh;
+}
+
+.card1{
+  background-color: #ebf8de;
+}
+
+.card2{
+  background-color: #f6ff8a;
+}
+.card3{
+  background-color: #4c9883;
+}
+
+.card4{
+  background-color: #e3c2a6;
 }
 

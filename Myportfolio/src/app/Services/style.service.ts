@@ -20,7 +20,7 @@ export class StyleService {
       likebutton: 'magentaAndRedOrangelikeButton',
       sharebutton: 'magentaAndRedOrangeshareButton',
       cardbutton: 'magentaAndRedOrangecardBtn',
-      divider: 'magentaAndRedOrangecardDivider'
+      divider: 'magentaAndRedOrangeDivider'
     },
 
     indigoPink: {
@@ -109,6 +109,6 @@ export class StyleService {
     'credColorPalete'
   );
   public styleData: Observable<string> = this.styleData$.asObservable();
-  public defaultTheme: any = 'magentaAndRedOrange';
+  public defaultTheme: any = 'credColorPalete';
   constructor() {}
 }

@@ -347,7 +347,7 @@ $mobile-small: 300px;
 }
 
 .credColorPalete {
-  background-color: #1c2023 !important;
+  background-color: #1b1c1e !important;
   color: #fff !important;
 }
 
@@ -369,23 +369,25 @@ $mobile-small: 300px;
 }
 
 .credColorPalete-button {
-  background-color: #1c2023;
+  background-color: #1b1c1e;
   color: #d9a57c;
+  
 }
 
 .credColorPaleteSearch {
   background-color: #fff;
+  z-index:1;
 }
 
 .credColorPaleteMenuItem {
-  background-color: #202427;
+  background-color: #d9a57c;
   color: #1c2023;
   overflow-x: hidden !important;
 }
 
 .credColorPaletelikeButton {
   background-color: #1c2023;
-  color: #d9a57c;
+  color: #fff;
 }
 
 .credColorPaleteshareButton {
