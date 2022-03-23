@@ -1,7 +1,7 @@
 .content-loading {
   width: 100%;
   height: 100vh;
-  background-color: #500472;
+  background-color: #202427;
 
   display: flex;
   justify-content: center;
@@ -11,8 +11,8 @@
 h1 {
   
   position: relative;
-  color: #500472;
-  -webkit-text-stroke: 0.1vw #79cbb8;
+  color: #202427;
+  -webkit-text-stroke: 0.1vw #dae1eb;
   text-transform: uppercase;
   line-height:18vh;
 }
@@ -23,9 +23,9 @@ h1::before {
   top: 0;
   width: 0;
   height: 100%;
-  color: #79cbb8;
-  -webkit-text-stroke: 0vw #79cbb8;
-  border-right: 4px solid #79cbb8;
+  color: #dae1eb;
+  -webkit-text-stroke: 0vw #dae1eb;
+  border-right: 4px solid #dae1eb;
   overflow: hidden;
   animation: animate 5s linear infinite;
 }

@@ -3,8 +3,12 @@ h1 {
   position: relative;
   color:#fff;
 }
-.linebreak {
-  display: inline-block;
+#sub-title{
+  padding:0;
+  font-size: 3vw;
+  display:flex;
+  justify-content: flex-start;
+  color:#837c72;
 }
 
 // .text{
@@ -153,44 +157,72 @@ h1 {
   margin-top: 5vh;
   width: 28vw;
   height: 70vh;
-  box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+  // box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
   border-radius:15px;
-  background: rgba(255,255,255,0.1);
+  //glass background: rgba(255,255,255,0.1);
   overflow:hidden;
   display:flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid rgba(255,255,255,0.5);
-  border-left: 1px solid rgba(255,255,255,0.5);
-  backdrop-filter: blur(5px);
-  transform-style: preserve-3d;
-  transform: perspective(1000px);
+  // border-top: 1px solid rgba(255,255,255,0.5);
+  // border-left: 1px solid rgba(255,255,255,0.5);
+  // backdrop-filter: blur(5px);
+  // transform-style: preserve-3d;
+  // transform: perspective(1000px);
+  //neumorhism
+  background-color: #dae1eb;
+  
 }
 
 .container .card .content{
-  padding:20px;
+
   text-align:center;
   transition:0.5s;
-  // transform: translateY(100px);
-  // opacity:0;
+  margin-bottom: 4vh;
+  
+  border-radius:15px;
 }
-.container .card:hover .content{
+
+.container .card .content > .card{
+  padding:20px;
+  text-align:center;
+  width: 24vw;
+  height: 63vh;
+  border-radius:15px;
+  background-color: transparent;
+  box-shadow: inset 1rem 1rem 2rem rgba(0, 0, 0, .1),
+  inset -1rem -1rem 2rem rgba(255, 255, 255, .5);
+   outline:none;
+   border:0;
+}
+  
+.container .card .content .card:hover{
   // transform: translateY(0px);
   // opacity:1;
+  box-shadow: 
+     1rem 1rem 2rem rgba(0, 0, 0, .1),
+     -1rem -1rem 2rem rgba(255, 255, 255, .5);
 }
 .container .card .content h2 mat-icon{
   position: absolute;
-  top:25px;
-  right:110px;
-  font-size: 5em;
-  color: rgba(255,255,255,0.05);
+  top:2vh;
+  right:12vh;
+  font-size: 6vw;
+  //color: rgba(255,255,255,0.05);
   pointer-events: none;
+  color: #b6bbc5;
 
 }
-.container .card .content h3{
-  font-size: 3em;
-  color:#fff;
+.container .card .content h4{
+  font-size: 2vw;
+  color:#202427;
   font-weight: 300;
+  
+}
+
+.container .card .content p{
+  color: #202427;
+
 }
 
 .card{
@@ -204,6 +236,7 @@ h1 {
   
   outline: none;
 }
+
 
 .card2{
   background-color: #f6ff8a;

@@ -32,17 +32,14 @@
             <button mat-raised-button [ngClass]="likeButton?likeButton+' like-button':''" (click)="increaseLikeCount(i)">
               <mat-icon>favorite</mat-icon>LIKE&nbsp;{{ fact.like_count }}
             </button>
-            <div class="box-icon container-center">
-              <i class="fab fa-facebook-f"></i>
+            <div  [ngClass]="shareButton?shareButton+' box-icon container-center':''">
+              <i class="fab fa-facebook-f" (click)="facebookshare(i)"></i>
           </div>
-          <div class="box-icon container-center">
-              <i class="fab fa-twitter"></i>
+          <div [ngClass]="shareButton?shareButton+' box-icon container-center':''">
+              <i class="fab fa-twitter" (click)="twittershare(i)"></i>
           </div>
-          <div class="box-icon container-center">
-              <i class="fab fa-instagram"></i>
-          </div>
-          <div class="box-icon container-center">
-              <i class="fab fa-linkedin-in"></i>
+          <div [ngClass]="shareButton?shareButton+' box-icon container-center':''">
+              <i class="fab fa-whatsapp" (click)="whatsappshare(i)"></i>
           </div>
             <!-- <a [ngClass]="shareButton?shareButton+' share-button':''" (click)="whatsappshare(i)"><i class="fa-brands fa-whatsapp-square fa-2x"></i></a>
             <a [ngClass]="shareButton?shareButton+' share-button':''" (click)="facebookshare(i)"><i class="fa-brands fa-facebook-square fa-2x"></i></a>

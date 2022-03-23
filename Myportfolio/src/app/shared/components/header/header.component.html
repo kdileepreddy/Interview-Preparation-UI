@@ -21,7 +21,7 @@
             <mat-icon class="example-icon" aria-hidden="false" (click)="showPreferencesPopup()"
                 aria-label="Example notifications icon">settings
             </mat-icon>
-            <button mat-raised-button [class]="accountButton" [matMenuTriggerFor]="menu">
+            <button mat-raised-button [ngClass]="accountButton?accountButton+' account-button':''" [matMenuTriggerFor]="menu">
                 <mat-icon>account_box</mat-icon>&nbsp;Dileep Reddy
             </button>
             <mat-menu #menu="matMenu" [class]="menuItem">

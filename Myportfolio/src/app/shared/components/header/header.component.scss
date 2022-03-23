@@ -120,3 +120,18 @@ i {
 .menuItemCss{
   overflow-x: hidden !important;
 }
+
+.account-button{
+  border-radius:5%;
+  outline:none;
+  border:0;
+  box-shadow: 
+    1rem 1rem 2rem #292d30,
+    -1rem -1rem 2rem #2a2e31;
+}
+.account-button:hover{
+  border-radius:5%;
+  box-shadow: 
+    inset 1rem 1rem 2rem #292d30,
+    inset -1rem -1rem 2rem #2a2e31;
+}
