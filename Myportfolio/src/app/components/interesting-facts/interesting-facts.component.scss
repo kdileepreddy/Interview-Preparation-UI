@@ -2,6 +2,40 @@
   height: auto;
 }
 
+.card{
+  background-color: #dae1eb;
+  color: #202427;
+}
+
+.box-icon {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  box-shadow: 
+    1rem 1rem 2rem rgba(0, 0, 0, .1),
+    -1rem -1rem 2rem rgba(255, 255, 255, .5);
+}
+        
+.box-icon:hover {
+  box-shadow: 
+    inset 1rem 1rem 2rem rgba(0, 0, 0, .1),
+    inset -1rem -1rem 2rem rgba(255, 255, 255, .5);
+}
+        
+.box-icon:active {
+  box-shadow: none;
+}
+
+.box-icon > i {
+  font-size: 1.5rem;
+}
+
+.container-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 ::ng-deep .mat-card-content {
   text-align: justify;
   display: wrap;
@@ -21,6 +55,7 @@
 }
 .button-contianer {
   display: flex;
+  justify-content: space-between;
 }
 .mat-icon {
   font-size: 15px;

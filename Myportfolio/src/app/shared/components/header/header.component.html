@@ -7,11 +7,16 @@
         <span class="example-spacer"></span>
 
         <div class="Spacing">
+            
             <div class="input-icons">
-                <input type="search" class="example-full-width" [formControl]="searchFormControl" placeholder="search"
-                    [class]="search">
-                <a href=""><i class="fa fa-search icon search-color"></i></a>
+                <form class="search">
+                    <input class="search__input" placeholder="Search" type="text" name="" id="">
+                    <button class="search__btn container-center" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
             </div>
+       
             <mat-icon>email</mat-icon>
             <mat-icon class="example-icon" aria-hidden="false" (click)="showPreferencesPopup()"
                 aria-label="Example notifications icon">settings

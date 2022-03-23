@@ -195,20 +195,37 @@ h1 {
 
 .card{
   height:16vh;
+  
 }
 
 .card1{
   background-color: #ebf8de;
+  
+  
+  outline: none;
 }
 
 .card2{
   background-color: #f6ff8a;
+  outline: none;
 }
 .card3{
   background-color: #4c9883;
+  outline: none;
 }
 
 .card4{
   background-color: #e3c2a6;
+  outline: none;
+}
+
+span{
+  font-size: 2vw;
+  display :flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  vertical-align: middle;
+  line-height:16vh;
 }
 

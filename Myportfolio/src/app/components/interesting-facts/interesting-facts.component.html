@@ -1,7 +1,7 @@
 <div class="container">
   <div fxLayout="row wrap" fxLayoutGap="20px grid">
     <div [fxFlex]="100/NumberOfCards" *ngFor="let fact of facts; let i = index">
-      <mat-card class="mat-elevation-z4">
+      <mat-card class="mat-elevation-z4 card">
         <!-- <mat-card-header>
                     <div  mat-card-avatar class="example-header-image"></div>
                     <mat-card-title>Shiba Inu</mat-card-title>
@@ -32,10 +32,21 @@
             <button mat-raised-button [ngClass]="likeButton?likeButton+' like-button':''" (click)="increaseLikeCount(i)">
               <mat-icon>favorite</mat-icon>LIKE&nbsp;{{ fact.like_count }}
             </button>
-
-            <a [ngClass]="shareButton?shareButton+' share-button':''" (click)="whatsappshare(i)"><i class="fa-brands fa-whatsapp-square fa-2x"></i></a>
+            <div class="box-icon container-center">
+              <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="box-icon container-center">
+              <i class="fab fa-twitter"></i>
+          </div>
+          <div class="box-icon container-center">
+              <i class="fab fa-instagram"></i>
+          </div>
+          <div class="box-icon container-center">
+              <i class="fab fa-linkedin-in"></i>
+          </div>
+            <!-- <a [ngClass]="shareButton?shareButton+' share-button':''" (click)="whatsappshare(i)"><i class="fa-brands fa-whatsapp-square fa-2x"></i></a>
             <a [ngClass]="shareButton?shareButton+' share-button':''" (click)="facebookshare(i)"><i class="fa-brands fa-facebook-square fa-2x"></i></a>
-            <a [ngClass]="shareButton?shareButton+' share-button':''" (click)="twittershare(i)"><i class="fa-brands fa-twitter-square fa-2x"></i></a>
+            <a [ngClass]="shareButton?shareButton+' share-button':''" (click)="twittershare(i)"><i class="fa-brands fa-twitter-square fa-2x"></i></a> -->
           </div>
         </mat-card-actions>
       </mat-card>
