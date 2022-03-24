@@ -347,17 +347,20 @@ $mobile-small: 300px;
 }
 
 .credColorPalete {
-  background-color: #1b1c1e !important;
+  // background:rgba(255,255,255,0.2) !important;
   color: #fff !important;
+  // backdrop-filter: blur(10px);
 }
 
 .credColorPaleteCard {
   background-color: #4a678e !important;
   color: #fff !important;
+  
 }
 
 .credColorPaleteIcon {
   color: #d9a57c;
+  
 }
 
 .credColorPaleteTitle {
@@ -420,3 +423,4 @@ $mobile-small: 300px;
   background-color: #d9a57c;
   height: 2px;
 }
+

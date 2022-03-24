@@ -21,6 +21,8 @@ export class SidenavContentComponent implements OnInit {
   public themeNavLink: any;
   public themeActiveLink: any;
   public opened:boolean= false;
+  public header: any;
+  public sideNavTitle: any;
 
   constructor(
     private styleservice: StyleService,
@@ -30,6 +32,8 @@ export class SidenavContentComponent implements OnInit {
     this.styleservice.styleData.subscribe((data) => {
       this.theme = data;
       this.MatExpansionPanel = this.theme;
+      this.header = data;
+      this.sideNavTitle = this.styleservice.themeJson[data].title;
       this.accountIcon =
         'icon ' + this.styleservice.themeJson[this.theme].iconColor;
       this.themeNavLink = this.styleservice.themeJson[this.theme].navlink;
