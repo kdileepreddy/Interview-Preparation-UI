@@ -3,6 +3,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { DOCUMENT } from '@angular/common';
 import { DataService } from 'src/app/Services/data.service';
 import { StyleService } from 'src/app/Services/style.service';
+import vanillaTilt from 'vanilla-tilt';
 @Component({
   selector: 'app-interesting-facts',
   templateUrl: './interesting-facts.component.html',

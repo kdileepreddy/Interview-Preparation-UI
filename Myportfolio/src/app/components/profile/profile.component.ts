@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { DataService } from 'src/app/Services/data.service';
-// import 'vanilla-tilt';
+import vanillaTilt from 'vanilla-tilt';
 // declare var VanillaTilt:any;
 
 @Component({
@@ -14,6 +14,7 @@ export class ProfileComponent implements OnInit {
   public document:Document | undefined; 
   ngOnInit(): void {
     this.dataservice.pagedata$.next('Profile');
-    // VanillaTilt.init(this.card.nativeElement);
+    vanillaTilt.init(document.querySelectorAll('.card') as any);
+    
   }
 }

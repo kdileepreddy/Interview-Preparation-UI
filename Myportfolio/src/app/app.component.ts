@@ -8,7 +8,7 @@ import { NavigationStart, NavigationEnd, Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'Myportfolio';
-  public loading: boolean = false;
+  public loading: boolean = true;
   constructor(private router: Router) {}
   ngOnInit() {
     this.timeOut();

@@ -40,11 +40,12 @@
   align-items: center;
   justify-content: center;
   background-color: #dae1eb;
+  
 }
 
 .search {
 
-  border-radius: 5px;
+  border-radius:15px;
   display: flex;
   // box-shadow: 
   //   1rem 1rem 2rem rgba(0, 0, 0, .1),
@@ -57,7 +58,8 @@
   font-size: 1.2rem;
   color: #202427;
   letter-spacing: 0.1rem;
-  border-radius: 20%;
+  border-radius:15px;
+
 }
 
 .search__input::-webkit-input-placeholder {
@@ -122,16 +124,6 @@ i {
 }
 
 .account-button{
-  border-radius:5%;
-  outline:none;
-  border:0;
-  box-shadow: 
-    1rem 1rem 2rem #292d30,
-    -1rem -1rem 2rem #2a2e31;
-}
-.account-button:hover{
-  border-radius:5%;
-  box-shadow: 
-    inset 1rem 1rem 2rem #292d30,
-    inset -1rem -1rem 2rem #2a2e31;
+  
+  
 }

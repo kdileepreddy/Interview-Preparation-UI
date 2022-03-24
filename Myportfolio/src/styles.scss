@@ -376,7 +376,18 @@ $mobile-small: 300px;
 .credColorPalete-button {
   background-color: #202427;
   color: #d9a57c;
-  
+  border-radius:5px;
+  border:15px solid;
+  box-shadow: 
+  1rem 1rem 2rem #292d3099,
+  -1rem -1rem 2rem #2a2e3199 !important;
+}
+
+.credColorPalete-button:hover{
+  border-radius:5px;
+  box-shadow: 
+    inset 1rem 1rem 2rem #292d30,
+    inset -1rem -1rem 2rem #2a2e31 !important;
 }
 
 .credColorPaleteSearch {
