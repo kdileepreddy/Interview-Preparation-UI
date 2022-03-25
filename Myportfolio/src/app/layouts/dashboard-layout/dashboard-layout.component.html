@@ -3,7 +3,7 @@
   <mat-sidenav id="sidenav" mode="side"  [class]="sideNavColor" [class.menu-open]="sideBarOpen" [class.menu-close]="!sideBarOpen" opened>
     
       <!-- <app-sidenav-header></app-sidenav-header> -->
-      <app-sidenav-content></app-sidenav-content>
+      <app-sidenav-content [sideBar]="sideBarOpen"></app-sidenav-content>
     
   </mat-sidenav>
 

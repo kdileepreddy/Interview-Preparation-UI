@@ -30,11 +30,6 @@
     
 }
 
-// .sidenavheadertitle svg{
-//   width:60;
-//   height:100;
-
-// }
 mat-toolbar-row{
   padding-left:0;
   background:rgba(255,255,255,0.2);
@@ -83,6 +78,16 @@ mat-toolbar-row{
   padding-left: 5px;
 }
 
+.collapse{
+  display: none;
+}
+
+.centericon{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .mat-list-base .mat-list-item .mat-list-icon, .mat-list-base .mat-list-option .mat-list-icon {
   flex-shrink: 0;
   width: 3vw;
@@ -93,10 +98,7 @@ mat-toolbar-row{
   padding-right: 8px;
   padding-left: 0;
 }
-/*.mat-expansion-panel{
-    background-color:#500472;
-    color:#79cbb8;
-}*/
+
 ::ng-deep .mat-expansion-panel-header > .mat-expansion-indicator::after {
   background:rgba(255,255,255,0.2);
 }
@@ -109,20 +111,16 @@ mat-toolbar-row{
   transition: height 225ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon {
-  margin-left: 4vw;
-  padding: 10px;
-  font-size: 100px;
+  
+  text-align: center;
+  padding: 0;
+  font-size: 8vw;
+  margin-left: 3vw;
+    margin-top: -4vh;
   /*color: #79cbb8;*/
 }
 
-/*.nav-link {
-  color: #79cbb8;
 
-  &.active-link {
-    background-color: #79cbb8;
-    color:#500472;
-  }
-}*/
 .magentaAndRedOrange-nav-link {
   color: #79cbb8;
 
@@ -184,7 +182,7 @@ mat-toolbar-row{
   transform: perspective(1000px);
   background:rgba(255,255,255,0.2);
   box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-  width:15vw;
+  width:15.5vw;
   display:flex;
   justify-content: flex-start;
   align-items: center;

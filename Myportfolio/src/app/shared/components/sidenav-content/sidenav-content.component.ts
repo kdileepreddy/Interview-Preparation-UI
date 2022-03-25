@@ -4,6 +4,7 @@ import {
   ElementRef,
   ViewChild,
   Renderer2,
+  Input,
 } from '@angular/core';
 import { NavItem } from 'src/app/Interfaces/NavItem';
 import { StyleService } from 'src/app/Services/style.service';
@@ -23,7 +24,7 @@ export class SidenavContentComponent implements OnInit {
   public opened:boolean= false;
   public header: any;
   public sideNavTitle: any;
-
+  @Input() sideBar:boolean = false;
   constructor(
     private styleservice: StyleService,
     private renderer: Renderer2
