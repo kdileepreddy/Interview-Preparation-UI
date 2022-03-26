@@ -5,6 +5,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ConfirmationDialogComponent } from '../dialog/confirmation-dialog/confirmation-dialog.component';
 import { StyleService } from 'src/app/Services/style.service';
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -25,6 +26,7 @@ export class HeaderComponent implements OnInit {
   ) {}
   @Output() toggleSideBarForMe: EventEmitter<any> = new EventEmitter();
   ngOnInit(): void {
+   
     this.dataservice.pagedata.subscribe((data): any => {
       this.pageName = data;
     });

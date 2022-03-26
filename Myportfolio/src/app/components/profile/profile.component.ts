@@ -14,7 +14,19 @@ export class ProfileComponent implements OnInit {
   public document:Document | undefined; 
   ngOnInit(): void {
     this.dataservice.pagedata$.next('Profile');
-    vanillaTilt.init(document.querySelectorAll('.card') as any);
+    vanillaTilt.init(document.querySelectorAll('.tilt') as any);
     
+  }
+  toHome() :void{
+    document.getElementById("home")?.scrollIntoView({behavior:'smooth'});
+  }
+  toResume(): void{
+    document.getElementById("resume")?.scrollIntoView({behavior:'smooth'});
+  }
+  toProjects(): void{
+    document.getElementById("projects")?.scrollIntoView({behavior:'smooth'});
+  }
+  toContact(): void{
+    document.getElementById("contact")?.scrollIntoView({behavior:'smooth'});
   }
 }

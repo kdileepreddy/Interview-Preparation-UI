@@ -27,7 +27,7 @@ export class DashboardLayoutComponent implements OnInit {
   sideBarToggler(event: any) {
     this.sideBarOpen = !this.sideBarOpen;
     if(!this.sideBarOpen) {
-      this.contentMargin = 5;
+      this.contentMargin = 7;
       this.dataservice.carddata$.next(3);
     } else {
       this.contentMargin = 17;

@@ -1,3 +1,9 @@
+.scrolltop{
+  scroll-margin-top: 17vh;
+}
+
+
+
 h1 {
   font-size: 3vw;
   position: relative;
@@ -11,34 +17,6 @@ h1 {
   color:#837c72;
 }
 
-// .text{
-//     display:flex;
-//     justify-content: start;
-// }
-// h1::before,
-// h1::after {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-// }
-
-// h1::before {
-//   background: #79cbb8;
-//   animation: typewriter 6s #500472 steps(63) 1s forwards;
-// }
-
-// h1::after {
-//   background: black;
-//   animation: typewriter 6s #79cbb8 steps(63) 1s forwards;
-// }
-// @keyframes typewriter {
-//   to {
-//     left: 100%;
-//   }
-// }
 
 #title {
   // position:relative;
@@ -90,19 +68,7 @@ h1 {
   }
 }
 
-// button{
-//     background: #79cbb8;
-//     width:15vw;
-//     height:10vh;
-//     border: 4px solid #500472 !important;
-//     font-size:2vw;
-//     border-radius:10px;
-//     position:relative;
-//     padding:0;
-//     outline:none;
-// }
-
-// 
+ 
 .noselect {
   -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -113,38 +79,7 @@ h1 {
 		-webkit-tap-highlight-color: transparent;
 }
 
-// button {
-// 	width: 150px;
-// 	height: 50px;
-// 	cursor: pointer;
-// 	background: #202427;
-// 	margin: 10px;
-// 	border: none;
-// 	border-radius: 10px;
-// 	box-shadow: -2px -2px 7px #1c2023, 2px 2px 7px #d9a57c, inset 2px 2px 5px #1c2023, inset -2px -2px 5px #1c2023;
-// 	color: #d9a57c;
-// 	font-size: 16px;
-// }
 
-// button:hover {
-// 	box-shadow: -2px -2px 7px #444, 2px 2px 7px #222, inset 2px 2px 5px #222, inset -2px -2px 5px #444;
-// 	font-size: 15px;
-// 	transition: 500ms;
-// }
-
-// button:focus {
-// 	outline: none;
-// }
-
-// .red:hover {
-// 	color: #79cbb8;
-// 	text-shadow: 0px 0px 10px #93f071;
-// }
-
-// .green:hover {
-// 		color: #93f071;
-// 	text-shadow: 0px 0px 10px #93f071;
-// }
 
 .container{
   display:flex;
@@ -266,4 +201,53 @@ span{
   vertical-align: middle;
   line-height:16vh;
 }
+.profilecontainer{
+  width:100%;
+  height:100vh;
+  display:flex;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  flex-direction: column;;
+}
 
+
+
+section{
+  
+  
+  overflow-x: hidden;
+  flex:none;
+  scroll-snap-align: start;
+  // display:flex;
+  // justify-content: center;
+  // align-items: center;
+  
+}
+
+#home{
+  min-height:95vh;
+}
+
+#projects{
+  min-height:95vh;
+}
+
+#resume{
+  min-height:95vh;
+}
+
+#contact{
+  min-height:95vh;
+}
+
+
+
+::-webkit-scrollbar {
+  // overflow-x: hidden;
+  width:0;
+  background: transparent;
+}
+
+// ::-webkit-scrollbar-thumb {
+//   background: #FF0000;
+// }

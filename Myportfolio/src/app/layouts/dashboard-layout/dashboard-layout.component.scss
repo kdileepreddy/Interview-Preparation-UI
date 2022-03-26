@@ -43,7 +43,7 @@ width: 7vw;
 .contentCss{
   padding: 25px;
   width: auto;
-  height: 500%;
+  height: auto;
 }
 
 // .content-width {
@@ -54,3 +54,6 @@ width: 7vw;
 // .full-content-width {
 //   width: auto;
 // }
+// .mat-drawer-content {
+//   overflow-y:hidden !important;
+//   }
