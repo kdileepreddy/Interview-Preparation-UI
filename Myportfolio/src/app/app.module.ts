@@ -40,6 +40,7 @@ import { TypescriptComponent } from './components/interview-content/angular/type
 import { AngularcompilerComponent } from './components/interview-content/angular/angularcompiler/angularcompiler.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './components/profile/profile.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -82,7 +83,8 @@ import { ProfileComponent } from './components/profile/profile.component';
     MatIconModule,
     MatDialogModule ,
     MatDividerModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
 
   ],
   exports:[BackgroundCSSDirective],

@@ -83,23 +83,92 @@
     
     
     <section id="projects" class="scrolltop">
-
-        <div class="card card2" data-tilt data-tilt-max="30" data-tilt-speed="300"
+        <div class="row">
+            <div class="col-10">
+        <div class="card projectscard" data-tilt data-tilt-max="30" data-tilt-speed="300"
                             data-tilt-perspective="400" data-tilt-glare data-tilt-max-glare="0.4">
                             <span class="Projects">Projects</span>
                         </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="sideNavRadio">
+                            <label>
+                                <input type="radio" name="radio1" [(ngModel)]="radioValue" [value]="" (click)="toHome()">
+                                <h4 class="Navtitle">HOME</h4>
+                            </label>
+                            <label>
+                                <input type="radio" name="radio1" [(ngModel)]="radioValue" [value]="'projects'" (click)="toProjects()">
+                                <h4 class="Navtitle">PROJECTS</h4>
+                            </label>
+                            <label>
+                                <input type="radio" name="radio1" [(ngModel)]="radioValue" [value]="'resume'" (click)="toResume()">
+                                <h4 class="Navtitle">RESUME</h4>
+                            </label>
+                            <label>
+                                <input type="radio" name="radio1" [(ngModel)]="radioValue" [value]="'contact'" (click)="toContact()">
+                                <h4 class="Navtitle">CONTACT</h4>
+                            </label>
+                        </div>
+                    </div>
+                    </div>
     </section>
 
     <section id="resume" class="scrolltop">
-        <div class="card card3" data-tilt data-tilt-max="30" data-tilt-speed="300"
-                            data-tilt-perspective="400" data-tilt-glare data-tilt-max-glare="0.4">
-                            <span class="Resume">Resume</span>
-                        </div>
+        <div class="row">
+        <div class="col-10">
+            <div class="card resumecard">
+                <span class="Resume">Resume</span>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="sideNavRadio">
+                <label>
+                    <input type="radio" name="radio2" [(ngModel)]="radioValue1" [value]="" (click)="toHome()">
+                    <h4 class="Navtitle">HOME</h4>
+                </label>
+                <label>
+                    <input type="radio" name="radio2" [(ngModel)]="radioValue1" [value]="'projects'" (click)="toProjects()">
+                    <h4 class="Navtitle">PROJECTS</h4>
+                </label>
+                <label>
+                    <input type="radio" name="radio2" [(ngModel)]="radioValue1" [value]="'resume'" (click)="toResume()">
+                    <h4 class="Navtitle">RESUME</h4>
+                </label>
+                <label>
+                    <input type="radio" name="radio2" [(ngModel)]="radioValue1" [value]="'contact'" (click)="toContact()">
+                    <h4 class="Navtitle">CONTACT</h4>
+                </label>
+            </div>
+        </div>
+    </div>
     </section>
     <section id="contact" class="scrolltop">
-        <div class="card card4" data-tilt data-tilt-max="30" data-tilt-speed="300"
-                            data-tilt-perspective="400" data-tilt-glare data-tilt-max-glare="0.4">
-                            <span class="Contact">Contact</span>
-                        </div>
+        <div class="row">
+        <div class="col-10">
+            <div class="card contactcard" >
+                <span class="Contact">Contact</span>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="sideNavRadio">
+                <label>
+                    <input type="radio" name="radio3" [(ngModel)]="radioValue2" [value]="" (click)="toHome()">
+                    <h4 class="Navtitle">HOME</h4>
+                </label>
+                <label>
+                    <input type="radio" name="radio3" [(ngModel)]="radioValue2" [value]="'projects'" (click)="toProjects()">
+                    <h4 class="Navtitle">PROJECTS</h4>
+                </label>
+                <label>
+                    <input type="radio" name="radio3" [(ngModel)]="radioValue2" [value]="'resume'" (click)="toResume()">
+                    <h4 class="Navtitle">RESUME</h4>
+                </label>
+                <label>
+                    <input type="radio" name="radio3" [(ngModel)]="radioValue2" [value]="'contact'" (click)="toContact()">
+                    <h4 class="Navtitle">CONTACT</h4>
+                </label>
+            </div>
+        </div>
+    </div>
     </section>
 </div>

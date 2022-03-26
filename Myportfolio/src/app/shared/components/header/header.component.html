@@ -1,4 +1,4 @@
-<mat-toolbar [class]="header">
+<mat-toolbar [ngClass]="header?header:''">
     <mat-toolbar-row>
         <button mat-icon-button (click)="toggleSideBar()">
             <mat-icon>menu</mat-icon>
