@@ -20,7 +20,9 @@ export class StyleService {
       likebutton: 'magentaAndRedOrangelikeButton',
       sharebutton: 'magentaAndRedOrangeshareButton',
       cardbutton: 'magentaAndRedOrangecardBtn',
-      divider: 'magentaAndRedOrangeDivider'
+      divider: 'magentaAndRedOrangeDivider',
+      sidebarcolor: 'magentaAndRedOrangesidebarcolor',
+      cardcolor:'magentaAndRedOrangeCard'
     },
 
     indigoPink: {
@@ -36,7 +38,9 @@ export class StyleService {
       likebutton: 'indigoPinklikeButton',
       sharebutton: 'indigoPinkshareButton',
       cardbutton: 'indigoPinkcardBtn',
-      divider: 'indigoPinkDivider'
+      divider: 'indigoPinkDivider',
+      sidebarcolor: 'indigoPinksidebarcolor',
+      cardcolor:'indigoPinkCard'
     },
     pinkBluegrey: {
       title: 'pinkBluegreyTitle',
@@ -52,7 +56,9 @@ export class StyleService {
       likebutton: 'pinkBluegreylikeButton',
       sharebutton: 'pinkBluegreyshareButton',
       cardbutton: 'pinkBluegreycardBtn',
-      divider: 'pinkBluegreyDivider'
+      divider: 'pinkBluegreyDivider',
+      sidebarcolor: 'pinkBluegreysidebarcolor',
+      cardcolor:'pinkBluegreyCard'
     },
     RedAndLively: {
       title: 'RedAndLivelyTitle',
@@ -68,7 +74,9 @@ export class StyleService {
       likebutton: 'RedAndLivelylikeButton',
       sharebutton: 'RedAndLivelyshareButton',
       cardbutton: 'RedAndLivelycardBtn',
-      divider: 'RedAndLivelyDivider'
+      divider: 'RedAndLivelyDivider',
+      sidebarcolor: 'RedAndLivelysidebarcolor',
+      cardcolor:'RedAndLivelyCard'
     },
     OrangeAndCream: {
       title: 'OrangeAndCreamTitle',
@@ -84,7 +92,9 @@ export class StyleService {
       likebutton: 'OrangeAndCreamlikeButton',
       sharebutton: 'OrangeAndCreamshareButton',
       cardbutton: 'OrangeAndCreamcardBtn',
-      divider: 'OrangeAndCreamDivider'
+      divider: 'OrangeAndCreamDivider',
+      sidebarcolor: 'OrangeAndCreamsidebarcolor',
+      cardcolor:'OrangeAndCreamCard'
     },
     credColorPalete: {
       title: 'credColorPaleteTitle',
@@ -100,7 +110,9 @@ export class StyleService {
       likebutton: 'credColorPaletelikeButton',
       sharebutton: 'credColorPaleteshareButton',
       cardbutton: 'credColorPaletecardBtn',
-      divider: 'credColorPaleteDivider'
+      divider: 'credColorPaleteDivider',
+      sidebarcolor: 'credColorPaletesidebarcolor',
+      cardcolor:'credColorPaleteCard'
     },
     
   };

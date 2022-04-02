@@ -52,6 +52,7 @@
                         <div class="card card3 tilt" data-tilt data-tilt-max="30" data-tilt-speed="300"
                             data-tilt-perspective="400" data-tilt-glare data-tilt-max-glare="0.4" (click)="toResume()">
                             <span class="Resume">Resume</span>
+                            
                         </div>
                     </div>
                     <div class="col-6">
@@ -103,6 +104,7 @@
                             <label>
                                 <input type="radio" name="radio1" [(ngModel)]="radioValue" [value]="'resume'" (click)="toResume()">
                                 <h4 class="Navtitle">RESUME</h4>
+                                
                             </label>
                             <label>
                                 <input type="radio" name="radio1" [(ngModel)]="radioValue" [value]="'contact'" (click)="toContact()">
@@ -117,7 +119,82 @@
         <div class="row">
         <div class="col-10">
             <div class="card resumecard">
-                <span class="Resume">Resume</span>
+                <!-- <span class="ResumeTitle">Resume</span> -->
+                <div class="resumeBook">
+                
+            
+            
+                <!-- Book -->
+                <div id="book" class="book">
+                    <!-- Paper 1 -->
+                    <div id="p1" class="paper">
+                        <div class="front">
+                            <div id="f1" class="front-content">
+                                <h1>Front 1</h1>
+                                <button id="next-btn">
+                                    <i class="fas fa-arrow-circle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div id="b1" class="back-content">
+                                <h1>Back 1</h1>
+                                <button id="prev-btn">
+                                    <i class="fas fa-arrow-circle-left"></i>
+                                </button>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paper 2 -->
+                    <div id="p2" class="paper">
+                        <div class="front">
+                            <div id="f2" class="front-content">
+                                <h1>Front 2</h1>
+                                
+                                <button id="next-btn1">
+                                    <i class="fas fa-arrow-circle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div id="b2" class="back-content">
+                                <h1>Back 2</h1>
+                                <button id="prev-btn1">
+                                    <i class="fas fa-arrow-circle-left"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paper 3 -->
+                    <div id="p3" class="paper">
+                        <div class="front">
+                            <div id="f3" class="front-content">
+                                <h1>Front 3</h1>
+                                
+                                <button id="next-btn2">
+                                    <i class="fas fa-arrow-circle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div id="b3" class="back-content">
+                                <h1>Back 3</h1>
+                                <button id="prev-btn2">
+                                    <i class="fas fa-arrow-circle-left"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Next Button -->
+                <!-- <button id="next-btn">
+                    <i class="fas fa-arrow-circle-right"></i>
+                </button> -->
+            </div>
             </div>
         </div>
         <div class="col-2">

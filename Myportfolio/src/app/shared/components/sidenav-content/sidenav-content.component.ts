@@ -24,6 +24,7 @@ export class SidenavContentComponent implements OnInit {
   public opened:boolean= false;
   public header: any;
   public sideNavTitle: any;
+  public sidebarcolor: any;
   @Input() sideBar:boolean = false;
   constructor(
     private styleservice: StyleService,
@@ -32,6 +33,7 @@ export class SidenavContentComponent implements OnInit {
   ngOnInit(): void {
     this.styleservice.styleData.subscribe((data) => {
       this.theme = data;
+      this.sidebarcolor = this.styleservice.themeJson[data].sidebarcolor;
       this.MatExpansionPanel = this.theme;
       this.header = data;
       this.sideNavTitle = this.styleservice.themeJson[data].title;

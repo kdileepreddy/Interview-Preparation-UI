@@ -59,7 +59,7 @@ $mobile-small: 300px;
 // }
 
 .magentaAndRedOrange {
-  background-color: #500472 !important;
+  //  background-color: #500472 !important;
   color: #79cbb8 !important;
 }
 
@@ -122,13 +122,24 @@ $mobile-small: 300px;
   height: 2px;
 }
 
+.magentaAndRedOrangesidebarcolor{
+  background-color: #500472;
+}
+
+.magentaAndRedOrangeCard {
+  background-color: #500472 !important;
+  color: #79cbb8 !important;
+  
+}
+
+
 .indigoPink {
-  background-color: #3f51b5 !important;
+  // background-color: #3f51b5 !important;
   color: #fff !important;
 }
 
 .indigoPinkTitle {
-  background-color: #3f51b5;
+  // background-color: #3f51b5;
   color: #fff;
 }
 
@@ -176,8 +187,18 @@ $mobile-small: 300px;
   height: 2px;
 }
 
+.indigoPinksidebarcolor{
+  background-color: #3f51b5;
+}
+
+.indigoPinkCard {
+  background-color: #3f51b5 !important;
+  color: #fff !important;
+  
+}
+
 .pinkBluegrey {
-  background-color: #05386b !important;
+  // background-color: #05386b !important;
   color: #5cdb95 !important;
 }
 
@@ -232,8 +253,18 @@ $mobile-small: 300px;
   height: 2px;
 }
 
+.pinkBluegreysidebarcolor{
+  background-color: #05386b;
+}
+
+.pinkBluegreyCard {
+  background-color: #05386b !important;
+  color: #5cdb95 !important;
+  
+}
+
 .RedAndLively {
-  background-color: #5d001e !important;
+  // background-color: #5d001e !important;
   color: #e3e2df !important;
 }
 
@@ -289,8 +320,18 @@ $mobile-small: 300px;
   height: 2px;
 }
 
+.RedAndLivelysidebarcolor{
+  background-color: #5d001e;
+}
+
+.RedAndLivelyCard {
+  background-color: #5d001e !important;
+  color: #e3e2df !important;
+  
+}
+
 .OrangeAndCream {
-  background-color: #ee4935 !important;
+  // background-color: #ee4935 !important;
   color: #ffffff !important;
 }
 
@@ -345,10 +386,19 @@ $mobile-small: 300px;
   background-color: #500472;
   height: 2px;
 }
+.OrangeAndCreamsidebarcolor{
+  background-color: #ee4935;
+}
+
+.OrangeAndCreamCard {
+  background-color: #ee4935 !important;
+  color: #ffffff !important;
+  
+}
 
 .credColorPalete {
   // background:rgba(255,255,255,0.2) !important;
-  color: #fff !important;
+  color: #d9a57c !important;
   // backdrop-filter: blur(10px);
 }
 
@@ -430,3 +480,6 @@ $mobile-small: 300px;
   height: 2px;
 }
 
+.credColorPaletesidebarcolor{
+  background-color: #1b1c1e;
+}

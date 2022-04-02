@@ -34,21 +34,11 @@ export class FlipCardComponent implements OnInit {
         if (this.styleservice.defaultTheme != data) {
           this.renderer.removeClass(
             this.cardCSS.nativeElement,
-            this.styleservice.defaultTheme
+            this.styleservice.themeJson[this.styleservice.defaultTheme].cardcolor
           );
         }
-        if(data=="credColorPalete")
-        {
-          this.renderer.addClass(this.cardCSS.nativeElement, data+'Card');
-        }
-        else
-        {
-          this.renderer.removeClass(
-            this.cardCSS.nativeElement,
-            this.styleservice.defaultTheme+'Card'
-          );
-          this.renderer.addClass(this.cardCSS.nativeElement, data);
-        }
+          this.renderer.addClass(this.cardCSS.nativeElement, this.styleservice.themeJson[data].cardcolor);
+        
         
         this.btnColor = this.styleservice.themeJson[data].cardbutton;
         if (this.toggleProperty == false) {
