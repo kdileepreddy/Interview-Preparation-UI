@@ -1,5 +1,5 @@
 <div class="profilecontainer">
-    
+
     <section id="home" class="scrolltop">
 
 
@@ -25,23 +25,24 @@
                 <div class="row">
                     <!-- <div class="col-4"><button mat-button class="noselect red">Home</button></div>
             <div class="col-4"><button mat-button class="noselect red">About me</button></div> -->
-                
+
                     <div class="col-6">
-                        
+
                         <div class="card card1 tilt" data-tilt data-tilt-max="30" data-tilt-speed="300"
                             data-tilt-perspective="400" data-tilt-glare data-tilt-max-glare="0.4" (click)="toHome()">
                             <span class="Home">Home</span>
                         </div>
-                   
+
                     </div>
-                 
+
                     <div class="col-6">
-                        
+
                         <div class="card card2 tilt" data-tilt data-tilt-max="30" data-tilt-speed="300"
-                            data-tilt-perspective="400" data-tilt-glare data-tilt-max-glare="0.4" (click)="toProjects()">
+                            data-tilt-perspective="400" data-tilt-glare data-tilt-max-glare="0.4"
+                            (click)="toProjects()">
                             <span class="Projects">Projects</span>
                         </div>
-                    
+
                     </div>
                 </div>
                 <br>
@@ -52,7 +53,7 @@
                         <div class="card card3 tilt" data-tilt data-tilt-max="30" data-tilt-speed="300"
                             data-tilt-perspective="400" data-tilt-glare data-tilt-max-glare="0.4" (click)="toResume()">
                             <span class="Resume">Resume</span>
-                            
+
                         </div>
                     </div>
                     <div class="col-6">
@@ -65,7 +66,8 @@
             </div>
             <div class="col-6">
                 <div class="container">
-                    <div class="card tilt" data-tilt data-tilt-max="40" data-tilt-speed="300" data-tilt-perspective="500">
+                    <div class="card tilt" data-tilt data-tilt-max="40" data-tilt-speed="300"
+                        data-tilt-perspective="500">
                         <div class="content">
                             <div class="card">
                                 <h2>
@@ -81,171 +83,185 @@
 
         </div>
     </section>
-    
-    
+
+
     <section id="projects" class="scrolltop">
         <div class="row">
             <div class="col-10">
-        <div class="card projectscard" data-tilt data-tilt-max="30" data-tilt-speed="300"
-                            data-tilt-perspective="400" data-tilt-glare data-tilt-max-glare="0.4">
-                            <span class="Projects">Projects</span>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="sideNavRadio">
-                            <label>
-                                <input type="radio" name="radio1" [(ngModel)]="radioValue" [value]="" (click)="toHome()">
-                                <h4 class="Navtitle">HOME</h4>
-                            </label>
-                            <label>
-                                <input type="radio" name="radio1" [(ngModel)]="radioValue" [value]="'projects'" (click)="toProjects()">
-                                <h4 class="Navtitle">PROJECTS</h4>
-                            </label>
-                            <label>
-                                <input type="radio" name="radio1" [(ngModel)]="radioValue" [value]="'resume'" (click)="toResume()">
-                                <h4 class="Navtitle">RESUME</h4>
-                                
-                            </label>
-                            <label>
-                                <input type="radio" name="radio1" [(ngModel)]="radioValue" [value]="'contact'" (click)="toContact()">
-                                <h4 class="Navtitle">CONTACT</h4>
-                            </label>
-                        </div>
-                    </div>
-                    </div>
+                <div class="card projectscard" data-tilt data-tilt-max="30" data-tilt-speed="300"
+                    data-tilt-perspective="400" data-tilt-glare data-tilt-max-glare="0.4">
+                    <span class="Projects">Projects</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="sideNavRadio">
+                    <label>
+                        <input type="radio" name="radio1" [(ngModel)]="radioValue" [value]="" (click)="toHome()">
+                        <h4 class="Navtitle">HOME</h4>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio1" [(ngModel)]="radioValue" [value]="'projects'"
+                            (click)="toProjects()">
+                        <h4 class="Navtitle">PROJECTS</h4>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio1" [(ngModel)]="radioValue" [value]="'resume'"
+                            (click)="toResume()">
+                        <h4 class="Navtitle">RESUME</h4>
+
+                    </label>
+                    <label>
+                        <input type="radio" name="radio1" [(ngModel)]="radioValue" [value]="'contact'"
+                            (click)="toContact()">
+                        <h4 class="Navtitle">CONTACT</h4>
+                    </label>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="resume" class="scrolltop">
         <div class="row">
-        <div class="col-10">
-            <div class="card resumecard">
-                <!-- <span class="ResumeTitle">Resume</span> -->
-                <div class="resumeBook">
-                
-            
-            
-                <!-- Book -->
-                <div id="book" class="book">
-                    <!-- Paper 1 -->
-                    <div id="p1" class="paper">
-                        <div class="front">
-                            <div id="f1" class="front-content">
-                                <h1>Front 1</h1>
-                                <button id="next-btn">
-                                    <i class="fas fa-arrow-circle-right"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div id="b1" class="back-content">
-                                <h1>Back 1</h1>
-                                <button id="prev-btn">
+            <div class="col-10">
+                <div class="card resumecard">
+                    <!-- <span class="ResumeTitle">Resume</span> -->
+                    <div class="resumeBook">
+
+
+
+                        <!-- Book -->
+                        <div id="book" class="book">
+                            <!-- Paper 1 -->
+                            <div id="p1" class="paper">
+                                <div class="front">
+                                    <div id="f1" class="front-content">
+                                        <h1>Front 1</h1>
+
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div id="b1" class="back-content">
+                                        <h1>Back 1</h1>
+                                        <!-- <button id="prev-btn">
                                     <i class="fas fa-arrow-circle-left"></i>
-                                </button>
-                               
+                                </button> -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Paper 2 -->
+                            <div id="p2" class="paper">
+                                <div class="front">
+                                    <div id="f2" class="front-content">
+                                        <h1>Front 2</h1>
+
+                                        <!-- <button id="next-btn1">
+                                    <i class="fas fa-arrow-circle-right"></i>
+                                </button> -->
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div id="b2" class="back-content">
+                                        <h1>Back 2</h1>
+                                        <!-- <button id="prev-btn1">
+                                    <i class="fas fa-arrow-circle-left"></i>
+                                </button> -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Paper 3 -->
+                            <div id="p3" class="paper">
+                                <div class="front">
+                                    <div id="f3" class="front-content">
+                                        <h1>Front 3</h1>
+
+                                        <!-- <button id="next-btn2">
+                                    <i class="fas fa-arrow-circle-right"></i>
+                                </button> -->
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div id="b3" class="back-content">
+                                        <h1>Back 3</h1>
+                                        <!-- <button id="prev-btn2">
+                                    <i class="fas fa-arrow-circle-left"></i>
+                                </button> -->
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     </div>
-                    <!-- Paper 2 -->
-                    <div id="p2" class="paper">
-                        <div class="front">
-                            <div id="f2" class="front-content">
-                                <h1>Front 2</h1>
-                                
-                                <button id="next-btn1">
-                                    <i class="fas fa-arrow-circle-right"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div id="b2" class="back-content">
-                                <h1>Back 2</h1>
-                                <button id="prev-btn1">
-                                    <i class="fas fa-arrow-circle-left"></i>
-                                </button>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Paper 3 -->
-                    <div id="p3" class="paper">
-                        <div class="front">
-                            <div id="f3" class="front-content">
-                                <h1>Front 3</h1>
-                                
-                                <button id="next-btn2">
-                                    <i class="fas fa-arrow-circle-right"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div id="b3" class="back-content">
-                                <h1>Back 3</h1>
-                                <button id="prev-btn2">
-                                    <i class="fas fa-arrow-circle-left"></i>
-                                </button>
-                                
-                            </div>
-                        </div>
+                    <div class="resumeButtons">
+                        <button id="prev-btn">
+                            <i class="fas fa-arrow-circle-left"></i>
+                        </button>
+                        <!-- Next Button -->
+                         <button id="next-btn">
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </button> 
                     </div>
                 </div>
-            
-                <!-- Next Button -->
-                <!-- <button id="next-btn">
-                    <i class="fas fa-arrow-circle-right"></i>
-                </button> -->
+                
             </div>
-            </div>
-        </div>
-        <div class="col-2">
-            <div class="sideNavRadio">
-                <label>
-                    <input type="radio" name="radio2" [(ngModel)]="radioValue1" [value]="" (click)="toHome()">
-                    <h4 class="Navtitle">HOME</h4>
-                </label>
-                <label>
-                    <input type="radio" name="radio2" [(ngModel)]="radioValue1" [value]="'projects'" (click)="toProjects()">
-                    <h4 class="Navtitle">PROJECTS</h4>
-                </label>
-                <label>
-                    <input type="radio" name="radio2" [(ngModel)]="radioValue1" [value]="'resume'" (click)="toResume()">
-                    <h4 class="Navtitle">RESUME</h4>
-                </label>
-                <label>
-                    <input type="radio" name="radio2" [(ngModel)]="radioValue1" [value]="'contact'" (click)="toContact()">
-                    <h4 class="Navtitle">CONTACT</h4>
-                </label>
+            <div class="col-2">
+                <div class="sideNavRadio">
+                    <label>
+                        <input type="radio" name="radio2" [(ngModel)]="radioValue1" [value]="" (click)="toHome()">
+                        <h4 class="Navtitle">HOME</h4>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio2" [(ngModel)]="radioValue1" [value]="'projects'"
+                            (click)="toProjects()">
+                        <h4 class="Navtitle">PROJECTS</h4>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio2" [(ngModel)]="radioValue1" [value]="'resume'"
+                            (click)="toResume()">
+                        <h4 class="Navtitle">RESUME</h4>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio2" [(ngModel)]="radioValue1" [value]="'contact'"
+                            (click)="toContact()">
+                        <h4 class="Navtitle">CONTACT</h4>
+                    </label>
+                </div>
             </div>
         </div>
-    </div>
+        
     </section>
     <section id="contact" class="scrolltop">
         <div class="row">
-        <div class="col-10">
-            <div class="card contactcard" >
-                <span class="Contact">Contact</span>
+            <div class="col-10">
+                <div class="card contactcard">
+                    <span class="Contact">Contact</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="sideNavRadio">
+                    <label>
+                        <input type="radio" name="radio3" [(ngModel)]="radioValue2" [value]="" (click)="toHome()">
+                        <h4 class="Navtitle">HOME</h4>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio3" [(ngModel)]="radioValue2" [value]="'projects'"
+                            (click)="toProjects()">
+                        <h4 class="Navtitle">PROJECTS</h4>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio3" [(ngModel)]="radioValue2" [value]="'resume'"
+                            (click)="toResume()">
+                        <h4 class="Navtitle">RESUME</h4>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio3" [(ngModel)]="radioValue2" [value]="'contact'"
+                            (click)="toContact()">
+                        <h4 class="Navtitle">CONTACT</h4>
+                    </label>
+                </div>
             </div>
         </div>
-        <div class="col-2">
-            <div class="sideNavRadio">
-                <label>
-                    <input type="radio" name="radio3" [(ngModel)]="radioValue2" [value]="" (click)="toHome()">
-                    <h4 class="Navtitle">HOME</h4>
-                </label>
-                <label>
-                    <input type="radio" name="radio3" [(ngModel)]="radioValue2" [value]="'projects'" (click)="toProjects()">
-                    <h4 class="Navtitle">PROJECTS</h4>
-                </label>
-                <label>
-                    <input type="radio" name="radio3" [(ngModel)]="radioValue2" [value]="'resume'" (click)="toResume()">
-                    <h4 class="Navtitle">RESUME</h4>
-                </label>
-                <label>
-                    <input type="radio" name="radio3" [(ngModel)]="radioValue2" [value]="'contact'" (click)="toContact()">
-                    <h4 class="Navtitle">CONTACT</h4>
-                </label>
-            </div>
-        </div>
-    </div>
     </section>
 </div>

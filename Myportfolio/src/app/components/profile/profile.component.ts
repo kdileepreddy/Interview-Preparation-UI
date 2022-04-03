@@ -19,12 +19,12 @@ export class ProfileComponent implements OnInit {
     this.dataservice.pagedata$.next('Profile');
     vanillaTilt.init(document.querySelectorAll('.tilt') as any);
     
-    const prevBtn:any = document.querySelector(".book .paper #prev-btn");
-const nextBtn:any = document.querySelector(".book .paper #next-btn");
-const prevBtn1:any = document.querySelector(".book .paper #prev-btn1");
-const nextBtn1:any = document.querySelector(".book .paper #next-btn1");
-const prevBtn2:any = document.querySelector(".book .paper #prev-btn2");
-const nextBtn2:any = document.querySelector(".book .paper #next-btn2");
+    const prevBtn:any = document.querySelector("#prev-btn");
+const nextBtn:any = document.querySelector("#next-btn");
+// const prevBtn1:any = document.querySelector(".book .paper #prev-btn1");
+// const nextBtn1:any = document.querySelector(".book .paper #next-btn1");
+// const prevBtn2:any = document.querySelector("#prev-btn2");
+// const nextBtn2:any = document.querySelector("#next-btn2");
 
 const book:any = document.querySelector("#book");
 
@@ -35,10 +35,10 @@ const paper3:any = document.querySelector("#p3");
 // Event Listener
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
-prevBtn1.addEventListener("click", goPrevPage);
-nextBtn1.addEventListener("click", goNextPage);
-prevBtn2.addEventListener("click", goPrevPage);
-nextBtn2.addEventListener("click", goNextPage);
+// prevBtn1.addEventListener("click", goPrevPage);
+// nextBtn1.addEventListener("click", goNextPage);
+// prevBtn2.addEventListener("click", goPrevPage);
+// nextBtn2.addEventListener("click", goNextPage);
 
 // Business Logic
 let currentLocation = 1;

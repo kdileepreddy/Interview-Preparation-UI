@@ -342,8 +342,9 @@ section{
 .book {
   position: relative;
   width: 30vw;
-  height: 70vh;
+  height: 66vh;
   transition: transform 0.5s;
+  // margin-top:-2vh;
 }
 
 .paper {
@@ -410,57 +411,71 @@ button:focus {
   outline: none;
 }
 
-button:hover i {
-  color: #636363;
-}
+// button:hover i {
+//   color: #202427;
+  
+// }
 
 i {
-  font-size: 50px;
-  color: gray;
+  font-size: 3vw;
+  color: #202427;
 }
 
+i:hover{
+  text-shadow: 0 0 5px #00fff1,
+  0 0 20px #00fff1;
+}
 /* Paper stack order */
 #p1 {
-  z-index: 3;
+  z-index: 4;
 }
 
 #p2 {
-  z-index: 2;
+  z-index: 3;
 }
 
 #p3 {
-  z-index: 1;
+  z-index: 2 ;
 }
 
 .book .paper h1{
   color:black;
 }
 
-.book .paper #next-btn{
+ #next-btn{
   display:flex;
   justify-content: flex-end;
   align-items: flex-end;
-  position: absolute;
+ 
   right: .5vw;
-  bottom: .5vh;
+ 
+  
 }
 
-.book .paper #prev-btn{
+#prev-btn{
   display:flex;
   justify-content: flex-start;
   align-items: flex-start;
-  position: absolute;
-  left: 13vw;
-  bottom: .5vh;
+  margin-right:10vw;
+  left: 5vw;
+  
 }
 
-.book .paper #next-btn1{
+.resumeButtons{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+#next-btn1{
   display:flex;
   justify-content: flex-end;
   align-items: flex-end;
   position: absolute;
-  right: .5vw;
+  right: 5vw;
   bottom: .5vh;
+  
 }
 
 .book .paper #prev-btn1{
@@ -470,6 +485,7 @@ i {
   position: absolute;
   left: .5vw;
   bottom: .5vh;
+  
 }
 
 .book .paper #next-btn2{
@@ -479,6 +495,8 @@ i {
   position: absolute;
   right: .5vw;
   bottom: .5vh;
+  
+  
 }
 
 .book .paper #prev-btn2{
@@ -488,4 +506,5 @@ i {
   position: absolute;
   left: .5vw;
   bottom: .5vh;
+  
 }
